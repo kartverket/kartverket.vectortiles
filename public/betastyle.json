@@ -1,4 +1,3 @@
-
 {
   "version": 8,
   "name": "beta",
@@ -40,28 +39,28 @@
   "layers": [
 	
 	{
-      "id": "adm_enheter",
+      "id": "N50adm_enheter",
       "type": "line",
       "minzoom": 1,
       "maxzoom": 15,
       "source": "adm_enheter",
-      "source-layer": "adm_grenser",
+      "source-layer": "N50AdministrativeGrenser",
       "paint": {
                 "line-color": [
                     "match",
                     ["to-string",["get", "objtype"]],
 					
                     ["Fylkesgrense"],
-                    "rgba(255, 1, 255, 1)",
+                    "rgba(1, 200, 1, 1)",
 					
 					["AvtaltAvgrensningslinje"],
                     "rgba(255, 182, 1, 1)",
 					
-                    ["Territorialgrense"],
-                    "rgba(80, 80, 80, 1)",
-					
-                    ["Kommunegrense"],
+					["Kommunegrense"],
                     "rgba(30, 70, 200, 1)", 
+					
+                    ["Territorialgrense"],
+                    "rgba(80, 80, 80, 1)", 
 					
                     ["Riksgrense"],
                     "rgba(20, 1, 20, 1)",
@@ -89,7 +88,7 @@
                     [
 					"Kommunegrense"
 					],
-                    0.5,
+                    1,
 					
                     [
 					"Riksgrense"
@@ -112,7 +111,188 @@
       }
 	  
 
+    },{
+      "id": "N100adm_enheter",
+      "type": "line",
+      "minzoom": 1,
+      "maxzoom": 15,
+      "source": "adm_enheter",
+      "source-layer": "N100AdministrativeGrenser",
+      "paint": {
+                "line-color": [
+                    "match",
+                    ["to-string",["get", "objtype"]],
+					
+                    ["Fylkesgrense"],
+                    "rgba(255, 1, 255, 1)",
+					
+					["AvtaltAvgrensningslinje"],
+                    "rgba(255, 182, 1, 1)",
+					
+                    ["Territorialgrense"],
+                    "rgba(80, 80, 80, 1)",
+				
+					
+                    ["Riksgrense"],
+                    "rgba(20, 1, 20, 1)",
+					
+                    ["Grunnlinje"],
+                    "rgba(20, 200, 1, 1)",	
+					
+                    "rgba(1, 1, 1, 0)"
+					],
+				
+				"line-width": [
+				     "match",
+                    ["to-string",["get", "objtype"]
+					],
+					[
+					"AvtaltAvgrensningslinje"
+					],
+                    2,
+					
+                    [
+					"Territorialgrense"
+					],
+                    2,
+					
+                    [
+					"Riksgrense"
+					],
+                    2,
+                    [
+					"Grunnlinje"
+					],
+                    2,	
+					[
+					"Fylkesgrense"
+					],
+					4,
+					1
+				]
+	
+					
+      }
+	  
+
+    },{
+      "id": "N250adm_enheter",
+      "type": "line",
+      "minzoom": 1,
+      "maxzoom": 15,
+      "source": "adm_enheter",
+      "source-layer": "N250AdministrativeGrenser",
+      "paint": {
+                "line-color": [
+                    "match",
+                    ["to-string",["get", "objtype"]],
+					
+					
+					["AvtaltAvgrensningslinje"],
+                    "rgba(255, 182, 1, 1)",
+					
+                    ["Territorialgrense"],
+                    "rgba(80, 80, 80, 1)",
+				
+					
+                    ["Riksgrense"],
+                    "rgba(20, 1, 20, 1)",
+					
+                    ["Grunnlinje"],
+                    "rgba(20, 200, 1, 1)",	
+					
+                    "rgba(1, 1, 1, 0)"
+					],
+				
+				"line-width": [
+				     "match",
+                    ["to-string",["get", "objtype"]
+					],
+					[
+					"AvtaltAvgrensningslinje"
+					],
+                    2,
+					
+                    [
+					"Territorialgrense"
+					],
+                    3,
+					
+                    [
+					"Riksgrense"
+					],
+                    2,
+                    [
+					"Grunnlinje"
+					],
+                    4,	
+					1
+				]
+	
+					
+      }
+	  
+
+    },{
+      "id": "N500adm_enheter",
+      "type": "line",
+      "minzoom": 1,
+      "maxzoom": 15,
+      "source": "adm_enheter",
+      "source-layer": "N500AdministrativeGrenser",
+      "paint": {
+                "line-color": [
+                    "match",
+                    ["to-string",["get", "objtype"]],
+					
+					
+					["AvtaltAvgrensningslinje"],
+                    "rgba(255, 182, 1, 1)",
+					
+                    ["Territorialgrense"],
+                    "rgba(255, 20, 150, 1)",
+				
+					
+                    ["Riksgrense"],
+                    "rgba(20, 1, 200, 1)",
+					
+                    ["Grunnlinje"],
+                    "rgba(20, 200, 1, 1)",	
+					
+                    "rgba(1, 1, 1, 0)"
+					],
+				
+				"line-width": [
+				     "match",
+                    ["to-string",["get", "objtype"]
+					],
+					[
+					"AvtaltAvgrensningslinje"
+					],
+                    2,
+					
+                    [
+					"Territorialgrense"
+					],
+                    3,
+					
+                    [
+					"Riksgrense"
+					],
+                    2,
+                    [
+					"Grunnlinje"
+					],
+                    4,	
+					1
+				]
+	
+					
+      }
+	  
+
     }
+		
 		
 	]
 }
