@@ -27,7 +27,7 @@
   }
  
   },
-  "sprite": "http://ddddddd.statkart.no/static/styles/landtopo/landtopo",
+  "sprite": "https://github.com/kartverket/U3.vectortiles/raw/main/style/landtopo",
   "glyphs": "http://dddddd.statkart.no/static/fonts/{fontstack}/{range}.pbf",
   "layers": [
   {
