@@ -67,7 +67,7 @@
         "maxzoom": 15,
         "minzoom": 1,
         "id": "hoydelag",
-	"fields": "objtype"
+	"fields": "makshoyde"
       },
 	        {
         "maxzoom": 19,
