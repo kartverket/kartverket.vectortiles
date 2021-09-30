@@ -3,7 +3,7 @@
     "name": "KartverketVT",
     "description": "Topographic data from as vectortiles",
     "version": "1.0.2",
-    "attribution": "Tiles &copy; <a href='https://kartverket.no' target='_blank' title'Powered by Kartverket'>Kartverket</a>. Map data: &copy; <a href='https://kartverket.no' target='_blank'>Kartverket</a>  &copy; <a href='https://www.kartverket.no/geodataarbeid/geovekst' target='_blank'>Geovekst</a> &copy;",
+    "attribution": "<a href='http://kartverket.no'>Kartverket</a>",
     "tiles": [
       "https://cache.kartverket.no/test/vectortiles/landtopo/{z}/{x}/{y}.mvt"
     ],
