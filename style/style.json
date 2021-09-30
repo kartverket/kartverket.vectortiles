@@ -28,7 +28,8 @@
  
   },
   "sprite": "https://github.com/kartverket/U3.vectortiles/raw/main/style/landtopo",
-  "glyphs": "http://dddddd.statkart.no/static/fonts/{fontstack}/{range}.pbf",
+  "glyphs": "https://github.com/kartverket/U3.vectortiles/blob/main/{fontstack}/{range}.pbf",
+	
   "layers": [
   {
       "id": "hoydelag",
