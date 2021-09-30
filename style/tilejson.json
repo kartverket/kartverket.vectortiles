@@ -18,142 +18,170 @@
       {
         "maxzoom": 15,
         "minzoom": 3,
-        "id": "adm_grenser"
+        "id": "adm_grenser",
+	"fields": "objtype"
       },
       {
         "maxzoom": 15,
         "minzoom": 4,
-        "id": "administrative_enheter"
+        "id": "administrative_enheter",
+	"fields": "objtype"
       },
 	        {
         "maxzoom": 19,
         "minzoom": 16,
-        "id": "adresse"
+        "id": "adresse",
+	"fields": "objtype"
       },
 	  	        {
         "maxzoom": 19,
         "minzoom": 12,
-        "id": "hoydetall"
+        "id": "hoydetall",
+	"fields": "objtype"
       },
 	  	        {
         "maxzoom": 19,
         "minzoom": 7,
-        "id": "stedsnavn"
+        "id": "stedsnavn",
+	"fields": "objtype"
       },
 	  	        {
         "maxzoom": 19,
         "minzoom": 4,
-        "id": "vegnavn"
+        "id": "vegnavn",
+	"fields": "objtype"
       },
 	  	  	        {
         "maxzoom": 19,
         "minzoom": 9,
-        "id": "bygninger"
+        "id": "bygninger",
+	"fields": "objtype"
       },
       {
         "maxzoom": 15,
         "minzoom": 1,
-        "id": "bygningspunkter"
+        "id": "bygningspunkter",
+	"fields": "objtype"
       },
       {
         "maxzoom": 15,
         "minzoom": 1,
-        "id": "hoydelag"
+        "id": "hoydelag",
+	"fields": "objtype"
       },
 	        {
         "maxzoom": 19,
         "minzoom": 1,
-        "id": "hoydekurver"
+        "id": "hoydekurver",
+	"fields": "objtype"
       },
 	        {
         "maxzoom": 15,
         "minzoom": 1,
-        "id": "pois"
+        "id": "pois",
+	"fields": "objtype"
       },
 	        {
         "maxzoom": 19,
         "minzoom": 1,
-        "id": "vannflater"
+        "id": "vannflater",
+	"fields": "objtype"
       },
 	        {
         "maxzoom": 15,
         "minzoom": 1,
-        "id": "vannlinje"
+        "id": "vannlinje",
+	"fields": "objtype"
       },
 	        {
         "maxzoom": 18,
         "minzoom": 1,
-        "id": "arealdekke"
+        "id": "arealdekke",
+	"fields": "objtype"
       },
 	        {
         "maxzoom": 19,
         "minzoom": 1,
-        "id": "naturinfo"
+        "id": "naturinfo",
+	"fields": "objtype"
       },
 	        {
         "maxzoom": 19,
         "minzoom": 15,
-        "id": "vegflater"
+        "id": "vegflater",
+	"fields": "objtype"
       },
       {
         "maxzoom": 19,
         "minzoom": 3,
-        "id": "veglinjer"
+        "id": "veglinjer",
+	"fields": "objtype"
       },
 	        {
         "maxzoom": 19,
         "minzoom": 15,
-        "id": "vegavgrensning"
+        "id": "vegavgrensning",
+	"fields": "objtype"
       },
 	        {
         "maxzoom": 19,
         "minzoom": 3,
-        "id": "fortau"
+        "id": "fortau",
+	"fields": "objtype"
       },
 	        {
         "maxzoom": 19,
         "minzoom": 9,
-        "id": "stier"
+        "id": "stier",
+	"fields": "objtype"
       },
 	        {
         "maxzoom": 19,
         "minzoom": 1,
-        "id": "jernbane"
+        "id": "jernbane",
+	"fields": "objtype"
       },
 	        {
         "maxzoom": 15,
         "minzoom": 2,
-        "id": "ferger"
+        "id": "ferger",
+	"fields": "objtype"
       },
 	        {
         "maxzoom": 15,
         "minzoom": 1,
-        "id": "jernbanestasjoner"
+        "id": "jernbanestasjoner",
+	"fields": "objtype"
       },
       {
         "maxzoom": 15,
         "minzoom": 1,
-        "id": "lufthavn"
+        "id": "lufthavn",
+	"fields": "objtype"
       },
       {
         "maxzoom": 15,
         "minzoom": 11,
-        "id": "vegpunkter"
+        "id": "vegpunkter",
+	"fields": "objtype"
       },
       {
         "maxzoom": 19,
         "minzoom": 0,
-        "id": "Anleggslinjer"
+        "id": "Anleggslinjer",
+	"fields": "objtype"
       },
       {
         "maxzoom": 15,
         "minzoom": 1,
-        "id": "Anleggspunkter"
+        "id": "Anleggspunkter",
+	"fields": "objtype"
       },
       {
         "maxzoom": 19,
         "minzoom": 14,
-        "id": "anleggsomrader"
+        "id": "anleggsomrader",
+	"fields": "objtype"
       }
     ]
 }
