@@ -1,9 +1,9 @@
+
 {
     "tilejson": "2.2.0",
-    "name": "KartverketVT",
+    "name": "Landtopo",
     "description": "Topographic data from as vectortiles",
     "version": "1.0.2",
-    "attribution": "<a href='http://kartverket.no'>Kartverket</a>",
     "tiles": [
       "https://cache.kartverket.no/test/vectortiles/landtopo/{z}/{x}/{y}.mvt"
     ],
@@ -18,170 +18,142 @@
       {
         "maxzoom": 15,
         "minzoom": 3,
-        "id": "adm_grenser",
-	"fields": "objtype"
+        "id": "adm_grenser"
       },
       {
         "maxzoom": 15,
         "minzoom": 4,
-        "id": "administrative_enheter",
-	"fields": "objtype"
+        "id": "administrative_enheter"
       },
 	        {
         "maxzoom": 19,
         "minzoom": 16,
-        "id": "adresse",
-	"fields": "objtype"
+        "id": "adresse"
       },
 	  	        {
         "maxzoom": 19,
         "minzoom": 12,
-        "id": "hoydetall",
-	"fields": "objtype"
+        "id": "hoydetall"
       },
 	  	        {
         "maxzoom": 19,
         "minzoom": 7,
-        "id": "stedsnavn",
-	"fields": "objtype"
+        "id": "stedsnavn"
       },
 	  	        {
         "maxzoom": 19,
         "minzoom": 4,
-        "id": "vegnavn",
-	"fields": "objtype"
+        "id": "vegnavn"
       },
 	  	  	        {
         "maxzoom": 19,
         "minzoom": 9,
-        "id": "bygninger",
-	"fields": "objtype"
+        "id": "bygninger"
       },
       {
         "maxzoom": 15,
         "minzoom": 1,
-        "id": "bygningspunkter",
-	"fields": "objtype"
+        "id": "bygningspunkter"
       },
       {
         "maxzoom": 15,
         "minzoom": 1,
-        "id": "hoydelag",
-	"fields": "makshoyde"
+        "id": "hoydelag"
       },
 	        {
         "maxzoom": 19,
         "minzoom": 1,
-        "id": "hoydekurver",
-	"fields": "objtype"
+        "id": "hoydekurver"
       },
 	        {
         "maxzoom": 15,
         "minzoom": 1,
-        "id": "pois",
-	"fields": "objtype"
+        "id": "pois"
       },
 	        {
         "maxzoom": 19,
         "minzoom": 1,
-        "id": "vannflater",
-	"fields": "objtype"
+        "id": "vannflater"
       },
 	        {
         "maxzoom": 15,
         "minzoom": 1,
-        "id": "vannlinje",
-	"fields": "objtype"
+        "id": "vannlinje"
       },
 	        {
         "maxzoom": 18,
         "minzoom": 1,
-        "id": "arealdekke",
-	"fields": "objtype"
+        "id": "arealdekke"
       },
 	        {
         "maxzoom": 19,
         "minzoom": 1,
-        "id": "naturinfo",
-	"fields": "objtype"
+        "id": "naturinfo"
       },
 	        {
         "maxzoom": 19,
         "minzoom": 15,
-        "id": "vegflater",
-	"fields": "objtype"
+        "id": "vegflater"
       },
       {
         "maxzoom": 19,
         "minzoom": 3,
-        "id": "veglinjer",
-	"fields": "objtype"
+        "id": "veglinjer"
       },
 	        {
         "maxzoom": 19,
         "minzoom": 15,
-        "id": "vegavgrensning",
-	"fields": "objtype"
+        "id": "vegavgrensning"
       },
 	        {
         "maxzoom": 19,
         "minzoom": 3,
-        "id": "fortau",
-	"fields": "objtype"
+        "id": "fortau"
       },
 	        {
         "maxzoom": 19,
         "minzoom": 9,
-        "id": "stier",
-	"fields": "objtype"
+        "id": "stier"
       },
 	        {
         "maxzoom": 19,
         "minzoom": 1,
-        "id": "jernbane",
-	"fields": "objtype"
+        "id": "jernbane"
       },
 	        {
         "maxzoom": 15,
         "minzoom": 2,
-        "id": "ferger",
-	"fields": "objtype"
+        "id": "ferger"
       },
 	        {
         "maxzoom": 15,
         "minzoom": 1,
-        "id": "jernbanestasjoner",
-	"fields": "objtype"
+        "id": "jernbanestasjoner"
       },
       {
         "maxzoom": 15,
         "minzoom": 1,
-        "id": "lufthavn",
-	"fields": "objtype"
+        "id": "lufthavn"
       },
       {
         "maxzoom": 15,
         "minzoom": 11,
-        "id": "vegpunkter",
-	"fields": "objtype"
+        "id": "vegpunkter"
       },
       {
         "maxzoom": 19,
         "minzoom": 0,
-        "id": "Anleggslinjer",
-	"fields": "objtype"
+        "id": "anleggslinjer"
       },
       {
         "maxzoom": 15,
         "minzoom": 1,
-        "id": "Anleggspunkter",
-	"fields": "objtype"
+        "id": "anleggspunkter"
       },
       {
         "maxzoom": 19,
         "minzoom": 14,
-        "id": "anleggsomrader",
-	"fields": "objtype"
+        "id": "anleggsomrader"
       }
     ]
 }
