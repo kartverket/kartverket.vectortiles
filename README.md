@@ -225,7 +225,9 @@ Layers such as veglinjer or bygningspunkt might contain one or more of these.
 
 ## Detailed Data model
 
-## adm_grenser
+
+
+> ## adm_grenser
 This layer contains country, municipality and district data. The geometry type is polygon so its possible to either shown areas or outlines.
 
 ### Attributes:
@@ -237,9 +239,10 @@ This layer contains country, municipality and district data. The geometry type i
      - **Kommunegrense:** Administrative districting of the municipalities
      - **Grunnlinje:** Baseline
      - **Fylkesgrense:** Administrative districting of the counties
+##  
 
 
-## tekst
+> ## tekst
 Contains area names, heights and addresses. This is a point type layer, however the features are displayed as labels rather than icons
 
 ### Attributes:
@@ -256,10 +259,9 @@ Contains area names, heights and addresses. This is a point type layer, however 
       - **Textstring:** Textstrings, labels and numbers displayed on the map
       - **Subtype:** Subdivision of Stedsnavn, more specifically objtypes 1000 - 7000. None of the other objtypes have subtypes. See code lists for more information.
           - Examples: 1102 = mountainous area, 1104 = forested area, 5101 = city, 5103 = town
+##  
 
-
-
-## vegnavn
+> ## vegnavn
 Separate text layer containing road names and numbers. This too is a point layer but had to be separated from the tekst layer due to the inclusion of several attributes which are only required for vegnavn
 
 ### Attributes:
@@ -288,9 +290,9 @@ Separate text layer containing road names and numbers. This too is a point layer
      - **U:** Under the terrain, tunnel
      - **T:** On the terrain
      - **L:** In the air, bridge
+##  
 
-
-##bygninger
+> ##bygninger
 The bygninger layer is a polygon layers which includes all buildings as areas. These are only shown on lower zoom levels (12 and under). On higher zoom levels buildings are represented as points
 
 ### Attributes:
@@ -304,10 +306,9 @@ bygningspunkter holds quite an extensive number of objtype values, the most comm
 **subtype:** contains 114 different subtypes which indicates byilding type, ordered by numbers, see code lists for more information. The bygnigner subtypes correspond to the bygningspunkter subtypes
 
 examples: 511 = hotel, 671 = church, 970 = hospital with ER
+##  
 
-
-
-## bygningspunkter
+> ## bygningspunkter
 Buildings represented with points and icons on higher zoom levels (11 and over). on lower zoom levels the buildings are represented as polygons.
 
 ### Attributes:
@@ -335,10 +336,9 @@ examples: 511 = hotel, 671 = church, 970 = hospital with ER
   - *Values:*
      - **Låst:** Locked
      - **Ulåst:** Unlocked
+##  
 
-
-
-## hoydelag
+> ## hoydelag
 A polygon layer which represents the overall landscape elevation, visualized with a colour gradient. Represented in meters above sea level. Generated from a DTM
 
 ### Attributes:
@@ -348,8 +348,9 @@ A polygon layer which represents the overall landscape elevation, visualized wit
      - **Høydelag**
 
 **makshoyde:** Max height in meters, given in intervals of 500m (N250,N500) or 600m (N2000), between 500-3000m
+##  
 
-## hoydekurver
+> ## hoydekurver
 Landscape elevation represented in meters above sea level in a line layer. Used for drawing contour lines. Generated from a DTM
 
 ### Attributes:
@@ -361,16 +362,14 @@ Landscape elevation represented in meters above sea level in a line layer. Used 
   - *Values:*
      - **I:** isbre/glacier
      - **T:** Terreng/terrain
+##  
 
-## hoyde
+> ## hoyde
 
 height in meters of each contour line. The vertical distance between them varies with zoom levels, from 10m intervals (zoom level 14 and below) to 600m (zoom level 8). From -20m - 2400m.
+##  
 
-
-
-
-
-## pois
+> ## pois
 Points of interest, these are usually visualized with an icon or a circle. Contains landscape-related points of interest such as trigonometric points, mountain peaks etc.
 
 ### Attributes:
@@ -393,16 +392,14 @@ Points of interest, these are usually visualized with an icon or a circle. Conta
   - *Values:*
      - **I:** isbre/glacier
      - **T:** Terreng/terrain
+##  
 
-
-
-## hoyde
+> ## hoyde
 
 Specific height of each point, given in meters. Only available for TrigonometriskPunkt and Terrengpunkt. A separate layer holds all water area polygons
+##  
 
-
-
-## vannlinje
+> ## vannlinje
 Vannlinje contains all water lines, like rivers and flood channels
 
 objtype, vannbredde
