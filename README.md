@@ -292,7 +292,7 @@ Separate text layer containing road names and numbers. This too is a point layer
      - **L:** In the air, bridge
 ##  
 
-> ##bygninger
+> ## bygninger
 The bygninger layer is a polygon layers which includes all buildings as areas. These are only shown on lower zoom levels (12 and under). On higher zoom levels buildings are represented as points
 
 ### Attributes:
