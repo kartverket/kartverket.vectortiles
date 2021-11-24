@@ -1,9 +1,4 @@
- 
-
-Forslag
-
-
-Introduction
+# Introduction
 Vectortiles from Kartverket are designed to offer the speed and performance of todays cache (tile) services but with flexible styling, provided through a data service and client side rendering.
 
 The first pilot service (landtopo) delivers data covering the whole of Norway and includes our most detailed 1:3000 data at higher zoom levels and generalised data at lower zoom levels for better performance.
@@ -14,7 +9,7 @@ In addition to the styling flexibility provided, increased user interaction is m
 
 
 
-What are vectortiles good for?
+# What are vectortiles good for?
 Flexible styling
 Reactive web applications
 Specialised use cases
@@ -27,7 +22,7 @@ GIS analysis (the data model is often too simple and the geometries not accurate
 
 
 
-Tilejson manifest doc and info
+# Tilejson manifest doc and info
 
 
 The tilejson specification was designed as an open way to provide map metadata, and defines the structure for a json manifest document.
@@ -42,7 +37,7 @@ The url can be used to specify service information in various clients. More info
 
 
 
-The document includes information about:
+### The document includes information about:
 
 Tile endpoints (url to the service with parameters)
 
@@ -56,14 +51,14 @@ Bounding box of the data coverage
 
 
 
-Examples:
+# Examples:
 Mapbox
 Leaflet
 OL
 Qgis?
 
-Style:
 
+# Style:
 
 The style of the service is defined within a .json file, and contains:
 
@@ -77,7 +72,7 @@ One or more style blocks
 
 
 
-Links to default styles:
+### Links to default styles:
 
 https://cache.kartverket.no/test/styles/landtopo.json
 
@@ -92,7 +87,7 @@ Thumbnails of styles
 Code examples
 Link to maputnik?
 
-Fonts:
+# Fonts:
 Some standard fonts (otherwise known as 'glyphs') are also available from Kartverket:
 
 opensansregular
@@ -111,7 +106,7 @@ https://cache.kartverket.no/test/fonts/{fontstack}/{range}.pbf"
 
 
 
-Vector Tile Contents
+# Vector Tile Contents
 We've tried to simplify the data model as much as possible to make it easier to build user defined styles. In effect, the service contains 21 layers, but each layer contains multiple feature types that can be filtered and styled as needed.
 
 Most of the layers contain a mix of data sources from our Kartdata and FKB data products. Because the models for these 2 datasets are very different, not all the attributes will contain values. Some features will have full attribute values for the first 14 zoom levels, but limited values from level 15 to 19, and vice versa.
@@ -120,241 +115,178 @@ Every layer has an 'objtype' attribute which contains information about what typ
 
 
 
-Layer overview
-adm_grenser
+## Layer overview
+**adm_grenser**
+  - objtype
 
-objtype
+**tekst**
+  - objtype
+  - textstring
+  - subtype
+  
+**vegnavn**
+  - objtype
+  - vegstatus
+  - vegnummer
+  - gatenavn
+  - vegkategori
+  - medium
+  
+**bygninger**
+  - objtype
+  - subtype
+  
+**bygningspunkter**
+  - objtype
+  - subtype
+  - betjeningsgrad
+  - tilgjengelighet
+  
+**hoydelag**
+  - objtype
+  - makshoyde
+  
+**hoydekurver**
+  - objtype
+  - medium
+  - hoyde
+  
+**pois**
+  - objtype
+  - medium
+  - hoyde
+  
+**vannlinje**
+  - objtype
+  - vannbredde
+  
+**arealdekke**
+  - objtype
+  
+**naturinfo**
+  - objtype
+  
+**vegflater**
+  - objtype
+  - medium
+  
+**veglinjer**
+  - objtype
+  - vegkategori
+  - motorvegtype
+  - medium
+  
+**vegavgrensning**
+  - objtype
+  - medium
+  
+**stier**
+  - objtype
+  - rutemerking
+  - belysning
+  
+**jernbane**
+  - objtype
+  - subtype
+  - medium
+  
+**ferger**
+  - objtype
+  
+**samferdsel punkt**
+  - objtype
+  - subtype
+  
+**anleggslinjer**
+  - objtype
+  
+**anleggspunkter**
+  - objtype
+  
+**anleggsomrader**
+  - objtype
 
-tekst
-
-objtype,textstring,subtype
-
-vegnavn
-
-objtype,vegstatus,vegnummer,gatenavn,vegkategori,medium
-
-bygninger
-
-objtype,subtype
-
-bygningspunkter
-
-objtype,subtype,betjeningsgrad,tilgjengelighet
-
-hoydelag
-
-objtype,makshoyde
-
-hoydekurver
-
-objtype,medium,hoyde
-
-pois
-
-objtype,medium,hoyde
-
-vannlinje
-
-objtype, vannbredde
-
-arealdekke
-
-objtype
-
-naturinfo
-
-objtype
-
-vegflater
-
-objtype,medium
-
-veglinjer
-
-objtype,vegkategori,motorvegtype,medium
-
-vegavgrensning
-
-objtype,medium
-
-stier
-
-objtype,rutemerking,belysning
-
-jernbane
-
-objtype,subtype,medium
-
-ferger
-
-objtype
-
-samferdsel punkt
-
-objtype, subtype
-
-anleggslinjer
-
-objtype
-
-anleggspunkter
-
-objtype
-
-anleggsomrader
-
-objtype
 
 
-
-Attributes
+## Attributes
 All layers contain the attribute objtype (object type), which describes the specific object type for each individual feature. Certain layers, like adm_grenser and arealdekke, only contain this one attribute.
 
-Objtype:
-Several layers also contain one or more of the following attributes
+**Objtype:** Several layers also contain one or more of the following attributes
 
-Subtype: a subdivision of objtype, allows for more detailed styling
-Textstring: Specific for text layers, contains the text displayed on the map
-Medium: Describes feature qualities such as location of an with respect to the earth surface (tunnel vs bridge, inside a building etc. for roads or paths, on the ground or on a glacier for hoydekurver or trigonometriske punkt)
+**Subtype:** a subdivision of objtype, allows for more detailed styling
+**Textstring:** Specific for text layers, contains the text displayed on the map
+**Medium:** Describes feature qualities such as location of an with respect to the earth surface (tunnel vs bridge, inside a building etc. for roads or paths, on the ground or on a glacier for hoydekurver or trigonometriske punkt)
+
 In addition there other layer-specific attributes, such as betjeningsgrad, tilgjhengelighet, hoyde, makshoyde, vannbredde vegkategori, motorvegtype,, rutemerking, belysning or retningsverdi.
 
 Layers such as veglinjer or bygningspunkt might contain one or more of these.
 
 
 
-Detailed Data model
-adm_grenser
+## Detailed Data model
+
+## adm_grenser
 This layer contains country, municipality and district data. The geometry type is polygon so its possible to either shown areas or outlines.
 
-Attributes:
-objtype
+### Attributes:
+**objtype**
 
-Values:
-Riksgrense: Delimitation of the country of Norway over against other countries
+### Values:
+**Riksgrense:** Delimitation of the country of Norway over against other countries
 
-Territorialgrense: Maritime territorial borders
+**Territorialgrense:** Maritime territorial borders
 
-AvtaltAvrensningslinje: Maritime delimitation of the country of Norway
+**AvtaltAvrensningslinje:** Maritime delimitation of the country of Norway
 
-Kommunegrense: Administrative districting of the municipalities
+**Kommunegrense:** Administrative districting of the municipalities
 
-Grunnlinje: Baseline
+**Grunnlinje:** Baseline
 
-Fylkesgrense: Administrative districting of the counties
+**Fylkesgrense:** Administrative districting of the counties
 
 
 
-tekst
+## tekst
 Contains area names, heights and addresses. This is a point type layer, however the features are displayed as labels rather than icons
 
-Attributes:
+### Attributes:
 
-objtype
-
-Values:
-adresse: building and house addresses , numbers and letters
-
-StedsnavnTekst: Names of all administrative units apart from municipalities.
-
-Kommune: names of municipalities
-
-Vannhoyde: height of a body of water
-
-høydetall: height of terrain/peaks
-
-1000,2000,3000,4000,5000,6000,7000: All other stedsnavn (place names), such as cities, rural areas, national parks, mountains, lakes or rivers. The numbers 1000 - 7000 refer to different "categories" of named areas/objects. See code lists for more information
-
-Examples: 1000 = Landforms, 3000 = fresh water bodies, 5000 = buildings and populated places
-
-Textstring
-
-Textstrings, labels and numbers displayed on the map
-
-Subtype
-
-Subdivision of Stedsnavn, more specifically objtypes 1000 - 7000. None of the other objtypes have subtypes. See code lists for more information
-
-Examples: 1102 = mountainous area, 1104 = forested area, 5101 = city, 5103 = town
+**objtype**
+  - *Values:*
+     - **adresse:** building and house addresses , numbers and letters
+     - **StedsnavnTekst:** Names of all administrative units apart from municipalities.
+     - **Kommune:** names of municipalities
+     - **Vannhoyde:** height of a body of water
+     - **høydetall:** height of terrain/peaks
+         - 1000,2000,3000,4000,5000,6000,7000: All other stedsnavn (place names), such as cities, rural areas, national parks, mountains, lakes or rivers. The numbers 1000 - 7000 refer to different "categories" of named areas/objects. See code lists for more information
+         - Examples: 1000 = Landforms, 3000 = fresh water bodies, 5000 = buildings and populated places
+      - **Textstring:** Textstrings, labels and numbers displayed on the map
+      - **Subtype:** Subdivision of Stedsnavn, more specifically objtypes 1000 - 7000. None of the other objtypes have subtypes. See code lists for more information.
+          - Examples: 1102 = mountainous area, 1104 = forested area, 5101 = city, 5103 = town
 
 
 
-vegnavn
+## vegnavn
 Separate text layer containing road names and numbers. This too is a point layer but had to be separated from the tekst layer due to the inclusion of several attributes which are only required for vegnavn
 
+### Attributes:
 
+**objtype**
 
-Attributes	Notes	
-Values
+### Values:
+**VegSenterlinje:** line in the centre between two road shoulders
+**Kjørebane:** line in the centre of a carriageway
+**vegstatus:** refers to the status of the road. Existing, temporary etc.
+    -Values:
+     - P: Approved planned road
+     - V: Existing road
+**vegnummer:** road number
 
-Notes
-objtype	
-VegSenterlinje
+**gatenavn:** street name. For example: Main Street
 
-line in the centre between two road shoulders
-
-
-Kjørebane	line in the centre of a carriageway
-Vegstatus	refers to the status of the road. Existing, temporary etc.	P	Approved planned road
-
-
-V	Existing Road
-vegnummer	road number	1234	For example: E18
-gatenavn	street name	text	For example: Main Street
-vegkategori	Indicates road type. Examples: private road, European route etc.	Europaveg	European Road
-
-
-Riksveg	National Road
-
-
-Fylkesveg	County Road
-
-
-Kommunal veg	District Road
-
-
-Privat veg	Private Road
-Medium	
-the location of the object relative to the earth's surface.
-
-Examples: On bridge, in tunnel, on the ground etc.
-
-U	Under the terrain: tunnel
-
-
-T
-
-On the terrain
-
-
-L	IN the air: bridge
-Attributes:
-
-objtype
-
-Values:
-VegSenterlinje: line in the centre between two road shoulders
-
-Kjørebane: line in the centre of a carriageway
-
-
-
-vegstatus: refers to the status of the road. Existing, temporary etc.
-
-Values:
-P: Approved planned road
-
-V: Existing road
-
-
-
-vegnummer: road number
-
-gatenavn: street name. For example: Main Street
-
-vegkategori: Indicates road type. Examples: private road, European route etc.
-
-Values:
-E: Europaveg/ European Route
+**vegkategori:** Indicates road type. Examples: private road, European route etc.
+    - Values:
+      - E: Europaveg/ European Route
 
 F: Fylkesveg/ County Road
 
