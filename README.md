@@ -230,20 +230,13 @@ This layer contains country, municipality and district data. The geometry type i
 
 ### Attributes:
 **objtype**
-
-### Values:
-**Riksgrense:** Delimitation of the country of Norway over against other countries
-
-**Territorialgrense:** Maritime territorial borders
-
-**AvtaltAvrensningslinje:** Maritime delimitation of the country of Norway
-
-**Kommunegrense:** Administrative districting of the municipalities
-
-**Grunnlinje:** Baseline
-
-**Fylkesgrense:** Administrative districting of the counties
-
+  - *Values:*
+     - **Riksgrense:** Delimitation of the country of Norway over against other countries
+     - **Territorialgrense:** Maritime territorial borders
+     - **AvtaltAvrensningslinje:** Maritime delimitation of the country of Norway
+     - **Kommunegrense:** Administrative districting of the municipalities
+     - **Grunnlinje:** Baseline
+     - **Fylkesgrense:** Administrative districting of the counties
 
 
 ## tekst
@@ -272,153 +265,104 @@ Separate text layer containing road names and numbers. This too is a point layer
 ### Attributes:
 
 **objtype**
-
-### Values:
-**VegSenterlinje:** line in the centre between two road shoulders
-**Kjørebane:** line in the centre of a carriageway
+  - *Values:'
+     - **VegSenterlinje:** line in the centre between two road shoulders
+     - **Kjørebane:** line in the centre of a carriageway
 **vegstatus:** refers to the status of the road. Existing, temporary etc.
-    -Values:
-     - P: Approved planned road
-     - V: Existing road
+  -Values:
+   - P: Approved planned road
+   - V: Existing road
 **vegnummer:** road number
-
 **gatenavn:** street name. For example: Main Street
-
 **vegkategori:** Indicates road type. Examples: private road, European route etc.
-    - Values:
-      - E: Europaveg/ European Route
+  - Values:
+    - **E:** Europaveg/ European Route
+    - **F:** Fylkesveg/ County Road
+    - **K:** Kommunal veg/ District Road
+    - **P:** Privat veg/Private Road
+    - **R:** Riksveg/ National Road
+    - **S:** Skogsbilveg/ Forest Road
 
-F: Fylkesveg/ County Road
-
-K: Kommunal veg/ District Road
-
-P: Privat veg/Private Road
-
-R: Riksveg/ National Road
-
-S: Skogsbilveg/ Forest Road
-
-
-
-medium: the location of the object relative to the earth's surface
-
-Values:
-U: Under the terrain, tunnel
-
-T: On the terrain
-
-L: In the air, bridge
+**medium:** the location of the object relative to the earth's surface
+  - *Values:*
+     - **U:** Under the terrain, tunnel
+     - **T:** On the terrain
+     - **L:** In the air, bridge
 
 
-
-bygninger
+##bygninger
 The bygninger layer is a polygon layers which includes all buildings as areas. These are only shown on lower zoom levels (12 and under). On higher zoom levels buildings are represented as points
 
-Attributes:
+### Attributes:
 
-objtype
-
-Values:
-bygning
+**objtype**
+  - *Values:*
+     - **bygning**
 
 bygningspunkter holds quite an extensive number of objtype values, the most common one being 'Bygning'. The others are rarely used. See codelists for more information.
 
-subtype
-
-contains 114 different subtypes which indicates byilding type, ordered by numbers, see code lists for more information. The bygnigner subtypes correspond to the bygningspunkter subtypes
+**subtype:** contains 114 different subtypes which indicates byilding type, ordered by numbers, see code lists for more information. The bygnigner subtypes correspond to the bygningspunkter subtypes
 
 examples: 511 = hotel, 671 = church, 970 = hospital with ER
 
 
 
-bygningspunkter
+## bygningspunkter
 Buildings represented with points and icons on higher zoom levels (11 and over). on lower zoom levels the buildings are represented as polygons.
 
-Attributes:
+### Attributes:
 
-objtype
-
-Values:
-bygning
+**objtype**
+  - *Values:*
+     - **bygning**
 
 bygningspunkter holds quite an extensive number of objtype values, the most common one being 'Bygning'. The others are rarely used. See codelists for more information.
 
-
-
-subtype
-
-contains 114 different subtypes which indicates byilding type, ordered by numbers, see code lists for more information. The bygnigner subtypes correspond to the bygningspunkter subtypes
+**subtype:** contains 114 different subtypes which indicates byilding type, ordered by numbers, see code lists for more information. The bygnigner subtypes correspond to the bygningspunkter subtypes
 
 examples: 511 = hotel, 671 = church, 970 = hospital with ER
 
-betjeningsgrad
+**betjeningsgrad:** description of which service functions are available. Only applicable to public cabins (subtypes 956 and 56)
+  - *Values:*
+     - **S:** Selvbetjent/ Self-service cabins
+     - **U:** Ubetjent/ No-service cabins
+     - **B:** Betjent/ Staffed lodges
+     - **R** Rastebu/Small huts with wood stoves
+     - **D:** Dagstur/ Cabins suitable for day trips. Open seasonally
+     - **G:** Gapahuk/ Lean-to, or very primitive basic cabins
 
-description of which service functions are available. Only applicable to public cabins (subtypes 956 and 56)
-
-Values:
-S: Selvbetjent/ Self-service cabins
-
-U: Ubetjent/ No-service cabins
-
-B: Betjent/ Staffed lodges
-
-R Rastebu/Small huts with wood stoves
-
-D: Dagstur/ Cabins suitable for day trips. Open seasonally
-
-G: Gapahuk/ Lean-to, or very primitive basic cabins
-
-tilgjengelighet
-
-Describes whether a building is locked or open. Only applicable to public cabins
-
-Values:
-Låst: Locked
-
-Ulåst: Unlocked
+**tilgjengelighet:** Describes whether a building is locked or open. Only applicable to public cabins
+  - *Values:*
+     - **Låst:** Locked
+     - **Ulåst:** Unlocked
 
 
 
-hoydelag
+## hoydelag
 A polygon layer which represents the overall landscape elevation, visualized with a colour gradient. Represented in meters above sea level. Generated from a DTM
 
-Attributes:
+### Attributes:
 
-objtype
+**objtype**
+  - *Values:*
+     - **Høydelag**
 
-Values:
-Høydelag
+**makshoyde:** Max height in meters, given in intervals of 500m (N250,N500) or 600m (N2000), between 500-3000m
 
-
-
-makshoyde
-
-Max height in meters, given in intervals of 500m (N250,N500) or 600m (N2000), between 500-3000m
-
-
-
-hoydekurver
+## hoydekurver
 Landscape elevation represented in meters above sea level in a line layer. Used for drawing contour lines. Generated from a DTM
 
-Attributes:
+### Attributes:
 
-objtype
+**objtype**
+  - *Values:*
+     - **Høydekurve**
+**medium:** Describes ground surface type
+  - *Values:*
+     - **I:** isbre/glacier
+     - **T:** Terreng/terrain
 
-Values:
-Høydekurve
-
-
-
-medium
-
-Describes ground surface type
-
-Values:
-I: isbre/glacier
-
-T:Terreng/terrain
-
-hoyde
+## hoyde
 
 height in meters of each contour line. The vertical distance between them varies with zoom levels, from 10m intervals (zoom level 14 and below) to 600m (zoom level 8). From -20m - 2400m.
 
@@ -426,59 +370,39 @@ height in meters of each contour line. The vertical distance between them varies
 
 
 
-pois
+## pois
 Points of interest, these are usually visualized with an icon or a circle. Contains landscape-related points of interest such as trigonometric points, mountain peaks etc.
 
-Attributes:
+### Attributes:
 
-objtype
+**objtype:** The majority of these objtypes are only applicable to specific zoom level intervals, see code lists for more information. TrigonometriskPunkt and Terrengpunkt are available on all zoom levels
+  - *Values:*
+     - **TrigonometriskPunkt:** Trig point. Permanently marked point, marked with a bolt or other mark in which the plane coordinates and/or height are determined in a Trigonometrical network in a geodetic system
+     - **Terrengpunkt:** Point in the terrain with a measured height value used to indicate the height on pronounced surfaces in the terrain
+     - **Toppunkt:** highest point in the terrain with a measured height value used to indicate the height on pronounced surfaces in the terrain
+     - **Forsenkningspunkt:**Point in the terrain with a fixed height value which describes a depression in the terrain
+     - **Golfbane:** Golf course
+     - **Steinbrudd:** Quarry
+     - **Industriomrade:** Industrial area/site
+     - **Lufthavn:** Airport
+     - **Tettbebyggelse:** Populated area
+     - **InnmåltTre:** Tree
+     - **Stein:** Boulder
 
-The majority of these objtypes are only applicable to specific zoom level intervals, see code lists for more information. TrigonometriskPunkt and Terrengpunkt are available on all zoom levels
-
-Values:
-TrigonometriskPunkt: Trig point. Permanently marked point, marked with a bolt or other mark in which the plane coordinates and/or height are determined in a Trigonometrical
-network in a geodetic system
-
-Terrengpunkt: Point in the terrain with a measured height value used to indicate the height on pronounced surfaces in the terrain
-
-Toppunkt: highest point in the terrain with a measured height value used to indicate the height on pronounced surfaces in the terrain
-
-Forsenkningspunkt:Point in the terrain with a fixed height value which describes a depression in the terrain
-
-Golfbane: Golf course
-
-Steinbrudd: Quarry
-
-Industriomrade: Industrial area/site
-
-Lufthavn: Airport
-
-Tettbebyggelse: Populated area
-
-InnmåltTre: Tree
-
-Stein: Boulder
+**medium:** Describes ground surface type for topographic and terrain points. Only available for TrigonometriskPunkt and Terrengpunkt
+  - *Values:*
+     - **I:** isbre/glacier
+     - **T:** Terreng/terrain
 
 
 
-medium
-
-Describes ground surface type for topographic and terrain points. Only available for TrigonometriskPunkt and Terrengpunkt
-
-Values:
-I: isbre/glacier
-
-T:Terreng/terrain
-
-
-
-hoyde
+## hoyde
 
 Specific height of each point, given in meters. Only available for TrigonometriskPunkt and Terrengpunkt. A separate layer holds all water area polygons
 
 
 
-vannlinje
+## vannlinje
 Vannlinje contains all water lines, like rivers and flood channels
 
 objtype, vannbredde
@@ -564,7 +488,7 @@ Source data
 In depth description of data layers
 In depth description per zoom level
 
-FAQ's - ala Ordnance Survey
+# FAQ's - ala Ordnance Survey
 
 
 How do I access OS Vector Tile API?
