@@ -358,15 +358,13 @@ Landscape elevation represented in meters above sea level in a line layer. Used 
 **objtype**
   - *Values:*
      - **Høydekurve**
+ 
 **medium:** Describes ground surface type
   - *Values:*
      - **I:** isbre/glacier
      - **T:** Terreng/terrain
-##  
 
-> ## hoyde
-
-height in meters of each contour line. The vertical distance between them varies with zoom levels, from 10m intervals (zoom level 14 and below) to 600m (zoom level 8). From -20m - 2400m.
+**hoyde:** height in meters of each contour line. The vertical distance between them varies with zoom levels, from 10m intervals (zoom level 14 and below) to 600m (zoom level 8). From -20m - 2400m.
 ##  
 
 > ## pois
@@ -395,7 +393,7 @@ Points of interest, these are usually visualized with an icon or a circle. Conta
 **hoyde:** Specific height of each point, given in meters. Only available for TrigonometriskPunkt and Terrengpunkt. A separate layer holds all water area polygons
 ##  
 
-> ## POIS
+> ## vannlinje
 
 Vannlinje contains all water lines, mostly rivers. Water polygons can be found in the Arealdekke layer (land cover). At Zoom level 14 and down rivers are shown as polygons (Arealdekke)
 
@@ -552,87 +550,6 @@ A line layer containing all roads, paths and trails in the terrain or on unculti
      - **1:** Trail route is lit up
      - **2:** Trail route is partially lit up
      - **3:** Trail route is not lit up
-
-
-
-> ## vannlinje
-Vannlinje contains all water lines, like rivers and flood channels
-
-objtype, vannbredde
-
-
-
-
-
-
-
-arealdekke
-naturinfo
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 Table view of layers - ala ordnance survey
