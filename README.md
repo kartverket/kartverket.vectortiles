@@ -551,21 +551,137 @@ A line layer containing all roads, paths and trails in the terrain or on unculti
      - **2:** Trail route is partially lit up
      - **3:** Trail route is not lit up
 
+##  
+
+> ## jernbane
+Line layer which represents a single or several parallel tracks as part of a railway line. 
+
+**objtype**
+  - *Values:*
+     - **Bane:** Railway. Zoom level 7-13 
+     - **Spormidt:** line in the centre between two rail strings. zoom levels 14 and higher
+
+**subtype:** Describes railway type. Only applicable for features with objtype 'bane' on zoom levels 10 and higher
+  - *Values:*
+     - **N:** Nedlagt: Disused railway
+     - **P:** Planlagt. Planned railway
+     - **J:** Jernbane. Railway
+     - **T:** Tunellbane. Underground railway
+     - **M:** Museumsbane. Heritage railway
+
+**medium:** The location of the object relative to the earth's surface. 
+  - *Values:*
+     - **B:** Inside bulding or construction
+     - **U:** Under the terrain, tunnel
+     - **T:** On the terrain, on ground level
+     - **L:** In the air, bridge
+
+##  
+
+> ## ferger
+Line layer representing all routes serviced by ferries
+
+**objtype**
+  - *Values:*
+**bilferjestrekning:** ferry route serviced by car ferries as part of the road network 
+
+passasjerferjestrekning: ferry route for transportation of people and goods. Wherever bilferjestrekning and passasjerferjestrekning coincide the objtype bilferjestrekning will be used 
+
+##  
+
+> ## samferdsel punkt
+All point data related to infrastructure, including stations, airports and parking spaces. Several of these features are also available as polygon features through anleggsomrader or arealdekke on higher zoom levels
+
+**objtype**
+  - *Values:*
+     - **Lufthavn:** Airport/ landing platforms and runways for planes and helicopters 
+     - **Stasjon:** Railway station 
+     - **Vegsperring:** Roadblocks. Only available on zoom levels 13 and higher 
+     - **Parkeringsomrade:** Parking areas and structures. Only available on zoom levels 13 and higher 
+
+**subtype:** Only applicable for features with objtype 'Lufthavn'. Indicate the aircraft type suitable to land at the specific site
+  - *Values:*
+     - **L:** Landing strip/runway for planes 
+     - **H:** Landing platform for helicopter
+
+##  
+
+> ## anleggslinjer
+Installation and construction line type data. Includes construction lines, outlines and boundaries, as well as electrical wires and lines conducting electrical power over large distances
+
+**objtype:** There is a quite extensive list of different values for anleggslinjer objtype. All values can be found in code lists. Some examples include:
+  - *Values:*
+     - **Skitrekk:** Ski lift
+     - **Taubane:** Cable car
+     - **LuftledningLH:** Overhead power line
+     - **Bygningslinje:** Building outline
+     - **Vindkraftverk:** wind power station outline
+
+##  
+
+
+> ## anleggspunkter
+Installation and construction point type data. Includes construction points, suck as towers, wind turbines etc.
+
+**objtype:** There is a quite extensive list of different values for anleggslinjer objtype. All values can be found in code lists. Some examples include: 
+  - *Values:*
+     - **tårn:** tower
+     - **Bensinpumpe:** Gas/petrol pump
+     - **Capingplass:** camp site
+     - **Vindkraftverk:** wind turbine
+     - **Flaggstang:** Flag pole
+
+##  
+
+> ## anleggsomrader
+Installation and construction polygon type data. Only available on zoom levels 13 and higher
+
+**objtype:** There is a quite extensive list of different values for anleggsomrader objtype, several of which correspond to objtypes in anleggslinjer and anleggspunkter. All values can be found in code lists. Some examples include :
+  - *Values:*
+     - **Tank:** Tank
+     - **Tårn:** tower
+     - **Svømmebasseng:** Swimming pool
+     - **Bru:** bridge 
+     - **BautaStatue:** Statues and monuments 
+
 
 Table view of layers - ala ordnance survey
 Fields explanation
-Source data
+
+
+# Source data
+
+The data in the service comes from 3 products:
+
+Kartdata (general topographic data N5000 - N50)
+FKB (1:5000 topographic data)
+Matrikkel (cadastral data)
+
+These data sources can be further explored within the [Norwegian national geoportal](https://www.geonorge.no/en) 
+
+
 In depth description of data layers
 In depth description per zoom level
 
-# FAQ's - ala Ordnance Survey
+# FAQ's
 
+Are there any code examples available?
+> we have some code examples at the top of this page, and within the seperate 'examples' folder. 
 
-How do I access OS Vector Tile API?
-Where can I find technical support?
-Do you have any code examples to help me get started?
-What projections are available?
-Can I use OS Maps API for my internal business use?
+Will these services work in desktop GIS clients?
+> Some, but not all. A qgis example can be found at the top of the page, but we do not have a comprehensive list over which clients currently support vectortiles services.
+
+Is technical support available?
+> Technical questions can be asked with the issues tracker section of this github project, or directly to the email address: 
+
+What projections are the services available in?
+> Currently the services are available in only google mercator (EPSG:3857) and UTM33N (EPSG:25833)
+
+Can I use the vectortiles service as a download service?
+> No. These services have been designed and customised to be view services only, we kindly ask that they are used as such.
+
+Which other vectortiles services are Kartverket planning?
+> We'll soon be providing services for marine topographic data, ports and hiking and bridleway trails. But with the number fo open datasets available from Kartverket, we're sure there'll be others to follow, stay tuned!
 
 
  
