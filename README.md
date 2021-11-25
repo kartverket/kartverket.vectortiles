@@ -392,12 +392,168 @@ Points of interest, these are usually visualized with an icon or a circle. Conta
   - *Values:*
      - **I:** isbre/glacier
      - **T:** Terreng/terrain
+**hoyde:** Specific height of each point, given in meters. Only available for TrigonometriskPunkt and Terrengpunkt. A separate layer holds all water area polygons
 ##  
 
-> ## hoyde
+> ## POIS
 
-Specific height of each point, given in meters. Only available for TrigonometriskPunkt and Terrengpunkt. A separate layer holds all water area polygons
+Vannlinje contains all water lines, mostly rivers. Water polygons can be found in the Arealdekke layer (land cover). At Zoom level 14 and down rivers are shown as polygons (Arealdekke)
+
+### Attributes: 
+
+**objtype**
+  - *Values:'
+     - **ElvBekk:** Rivers and streams
+     - **FlomløpKant:** Demarkation line for large river courses where water flow is occational due to regulation or other causes. only available on zoom level 13
+
+Vannlinje holds quite an extensive number of objtype values which are only available from zoom level 14 and under. see code lists for more information
+   
+**vannbredde:** Rough classification of watercourses according to average width over longer expanses. Only applicable for features with objtype 'ElvBekk' and for zoom levels 8-13
+  - *Values:*
+     - **2:** width: < 3m
+     - **3:** width: 3 - 15m
+     - **4:** width 15 - 40m
+     - **5:** width 40 - 100m 
+     - **6:** width > 100m 
 ##  
+
+> ## arealdekke
+Polygon layer which contains information on land cover, including both natural and industrial cover, as well as water bodies such as oceans and lakes 
+
+### Attributes:
+
+**objtype:** There are 30 different values for objtype. Information on all of these can be found in code lists. Below follows an unofficial subdivision of all 30 values by  theme/topic:
+  - *Values:*
+     - **Undeveloped land cover:** Skog, SnøIsbre, Myr, Steinbrudd, Steinslipp, Åpen fastmark, ÅpentOmrade
+     - **Sports facilities:** Alpinbakke, Golfbane, SportIdrettPlass
+     - **Residential areas:** Hyttefelt, ByggmessigBebyggelse, Bebygd, Tettbebyggelse
+     - **Other built-up areas:** Gravplass, Park, Lufthavn, Rullebane, Industriområde
+     - **Agricultural land:** DyrketMark, Fulldyrka jord, Overflatedyrka Jord, Innmarksbeite
+     - **Waters:** InnsjøkanRegulert, FerskvannTørrfall, Havflate, ElvBekk, Innsjø, Innsjøregulert , KanalGrøft
+
+##  
+
+> ## naturinfo
+Line layer outlining all protected sites and national parks, as well as "land cover line data"
+
+### Attributes: 
+
+**objtype**
+  - *Values:*
+     - **Naturverngrense:** Protected site and Natinal park oundaries 
+     - **Hekk:** Hedge 
+     - **Allé:** Alley/nature strip 
+
+##  
+
+> ## vegflater
+Road infrastructure presented as a polygon layer. This layer is only available on zoom levels 14 and higher. On higher zoom levels the road infrastructure is represented using the road infrastructure line layer
+
+### Attributes: 
+
+**objtype**
+  - *Values:*
+     - **Parkeringsområde:** Parking area
+     - **GangSykkelveg:**  pedestrian and cycle path
+     - **Veg:** Roadway
+     - **Traktorveg:** Fire road/forest road
+     - **Trafikkøy:** Traffic island 
+
+**medium:** the location of the object relative to the earth's surface.
+  - *Values:*
+     - **B:** Inside bulding or construction
+     - **U:** Under the terrain, tunnel
+     - **I:** On glacier
+     - **D:** (partially) under water 
+     - **T:** On the terrain, on ground level
+     - **L:**  In the air, bridge
+
+##  
+
+
+## veglinjer
+Road infrastructure presented as a line layer. This layer is only available on zoom levels 13 and lower. On higher zoom levels the road infrastructure is represented using the road infrastructure polygon layer
+
+### Attributes: 
+
+**objtype**
+  - *Values:*
+     - **Vegsenterlinje:** line in the centre between two road shoulders
+     - **Traktorveg:** Fire road/forest road
+     - **Fortauskant:** Pavement 
+
+**vegkategori:** Indicates road type. Examples: private road, European route etc. Only applicable for features with objtype 'Vegsenterlinje'
+  - *Values:*
+     - **E:** Europaveg/ European Route
+     - **F:** Fylkesveg/ County Road
+     - **K:** Kommunal veg/ District Road 
+     - **P:** Privat veg/Private Road 
+     - **R:** Riksveg/ National Road
+     - **S:** Skogsbilveg/ Forest Road 
+
+**motorvegtype:** Sub-classification of roadway type. Only applicable for features with objtype 'Vegsenterlinje'
+  - *Values:*
+     - **Motortrafikkveg:** Two-lane expressway
+     - **Ikke motorveg:** Normal road
+     - **Motorveg:** highway/freeway
+
+**medium:** the location of the object relative to the earth's surface.
+  - *Values:*
+     - **B:** Inside bulding or construction
+     - **U:** Under the terrain, tunnel
+     - **T:** On the terrain, on ground level
+     - **L:**  In the air, bridge
+
+##  
+
+> ## vegavgrensning
+Line layer representing outlines of roads and paths, including roadways, pavements and cycle paths. This layer is only available on zoom levels 14 and higher
+
+**objtype:** There are 16 different objtypes within the vegavgresning layer. the 7 most abundant of these are listed below 
+  - *Values:*
+     - **Vegdekkekant:** general road surface outline
+     - **Kjørebanekant:** carriageway outline
+     - **Fortauskant:** Pavement outline
+     - **Gangvegkant:** pedestrian path outline
+     - **GangSykkelvegkant:** pedestrian and cycle path outline
+     - **Trafikkøykant:** Traffic island outline
+     - **AnnetVegarealAvgrensning:** outher road or path outline
+
+**medium:** the location of the object relative to the earth's surface.
+  - *Values:*
+     - **B:** Inside bulding or construction
+     - **U:** Under the terrain, tunnel
+     - **I:** On glacier
+     - **D:** (partially) under water 
+     - **T:** On the terrain, on ground level
+     - **L:**  In the air, bridge
+     - **O:** On water 
+     - **V:** Always in/under water
+     - **S:** On the ocean bottom
+     - **X:** Unknown
+
+##  
+
+> ## stier
+A line layer containing all roads, paths and trails in the terrain or on uncultivated land 
+
+**objtype**
+  - *Values:*
+     - **Sti:** distinct path in the terrain which has become pronounced through many years' use or prepared for general travel on foot.
+     - **Barmarksløype:** traditional driving tracks/tractor roads on uncultivated land where motor traffic for the general public is permitted on snowless ground in accordance with the regulations laid down by the County governor
+
+**rutemerking:** States whether the trail is marked or not . Only applicable for features with objtype 'Sti'
+  - *Values:*
+     - **JA:** trail is marked
+     - **NEI:** Trail is not marked
+
+**belysning:** States whether trail route is lit up or not. Only applicable for features with objtype 'Sti' and on zoom levels 14 and higher 
+  - *Values:*
+     - **1:** Trail route is lit up
+     - **2:** Trail route is partially lit up
+     - **3:** Trail route is not lit up
+
+
 
 > ## vannlinje
 Vannlinje contains all water lines, like rivers and flood channels
