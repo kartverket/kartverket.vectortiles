@@ -377,7 +377,7 @@ Points of interest, these are usually visualized with an icon or a circle. Conta
      - **TrigonometriskPunkt:** Trig point. Permanently marked point, marked with a bolt or other mark in which the plane coordinates and/or height are determined in a Trigonometrical network in a geodetic system
      - **Terrengpunkt:** Point in the terrain with a measured height value used to indicate the height on pronounced surfaces in the terrain
      - **Toppunkt:** highest point in the terrain with a measured height value used to indicate the height on pronounced surfaces in the terrain
-     - **Forsenkningspunkt:**Point in the terrain with a fixed height value which describes a depression in the terrain
+     - **Forsenkningspunkt:** Point in the terrain with a fixed height value which describes a depression in the terrain
      - **Golfbane:** Golf course
      - **Steinbrudd:** Quarry
      - **Industriomrade:** Industrial area/site
@@ -390,6 +390,7 @@ Points of interest, these are usually visualized with an icon or a circle. Conta
   - *Values:*
      - **I:** isbre/glacier
      - **T:** Terreng/terrain
+
 **hoyde:** Specific height of each point, given in meters. Only available for TrigonometriskPunkt and Terrengpunkt. A separate layer holds all water area polygons
 ##  
 
