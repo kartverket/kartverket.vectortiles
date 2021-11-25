@@ -673,7 +673,7 @@ Will these services work in desktop GIS clients?
 > Some, but not all. A qgis example can be found at the top of the page, but we do not have a comprehensive list over which clients currently support vectortiles services.
 
 Is technical support available?
-> Technical questions can be asked with the [issues]( section of this github project, or directly to the email address: 
+> Technical questions can be asked with the [issues](https://github.com/kartverket/kartverket.vectortiles/issues) section of this github project, or directly to the email address: 
 
 What projections are the services available in?
 > Currently the services are available in only google mercator (EPSG:3857) and UTM33N (EPSG:25833)
