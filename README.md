@@ -88,21 +88,17 @@ Code examples
 Link to maputnik?
 
 # Fonts:
-Some standard fonts (otherwise known as 'glyphs') are also available from Kartverket:
+One standard font (otherwise known as 'glyphs') are also available from Kartverket:
 
-opensansregular
-
-.....
-
-.......
-
-
+**opensansregular**
 
 and can be used through this url:
 
 https://cache.kartverket.no/test/fonts/{fontstack}/{range}.pbf"
 
 (The application will replace the fontstack and range variables automatically as long as one of the above font names are defined as a text-font within a layer. For example: "text-font": ["OpenSansRegular"])
+
+Several other fonts are available from the [OpenMapTiles](https://github.com/openmaptiles/fonts). Just follow the instructions to include them in your own styles.
 
 
 
