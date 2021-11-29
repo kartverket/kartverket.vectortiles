@@ -60,7 +60,7 @@ Qgis?
 
 # Style:
 
-The style of the service is defined within a .json file, and contains:
+> The style of the service is defined within a .json file, and contains:
 
 Urls to one or more data sources (can be vectortiles, raw vector data, wms service osv), https://docs.mapbox.com/mapbox-gl-js/style-spec/sources/
 
