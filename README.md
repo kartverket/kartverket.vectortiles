@@ -19,9 +19,9 @@ Mobile applications
 ## What shouldn't you use vectortiles for?
 Downloading source data (the data in a vectortile is encoded and has been customised specifically for visualisation)
 GIS analysis (the data model is often too simple and the geometries not accurate enough)
+##  
 
-
-
+------------------------------------------------------
 
 # Tilejson manifest doc and info
 
@@ -50,7 +50,9 @@ Zoom levels
 
 Bounding box of the data coverage
 
+##  
 
+------------------------------------------------------
 
 # Examples:
 Mapbox
@@ -58,6 +60,9 @@ Leaflet
 OL
 Qgis?
 
+##  
+
+------------------------------------------------------
 
 # Style:
 
@@ -88,6 +93,10 @@ Thumbnails of styles
 Code examples
 Link to maputnik?
 
+##  
+
+------------------------------------------------------
+
 # Fonts:
 One standard font (otherwise known as 'glyphs') are also available from Kartverket:
 
@@ -101,7 +110,9 @@ https://cache.kartverket.no/test/fonts/{fontstack}/{range}.pbf"
 
 Several other fonts are available from the [OpenMapTiles](https://github.com/openmaptiles/fonts). Just follow the instructions to include them in your own styles.
 
+##  
 
+------------------------------------------------------
 
 # Vector Tile Contents
 We've tried to simplify the data model as much as possible to make it easier to build user defined styles. In effect, the service contains 21 layers, but each layer contains multiple feature types that can be filtered and styled as needed.
