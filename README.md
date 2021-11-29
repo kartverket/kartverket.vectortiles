@@ -19,7 +19,6 @@ Mobile applications
 ## What shouldn't you use vectortiles for?
 Downloading source data (the data in a vectortile is encoded and has been customised specifically for visualisation)
 GIS analysis (the data model is often too simple and the geometries not accurate enough)
-##  
 
 ------------------------------------------------------
 
