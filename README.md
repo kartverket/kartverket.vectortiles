@@ -62,9 +62,9 @@ Qgis?
 
 > The style of the service is defined within a .json file, and contains:
 
-Urls to one or more data sources (can be vectortiles, raw vector data, wms service osv), https://docs.mapbox.com/mapbox-gl-js/style-spec/sources/
+    Urls to one or more data sources (can be vectortiles, raw vector data, wms service osv), https://docs.mapbox.com/mapbox-gl-js/style-spec/sources/
 
-Url to a sprite (a single png and accompanying json file containing all symbol images used by the service) https://docs.mapbox.com/mapbox-gl-js/style-spec/sprite/
+    Url to a sprite (a single png and accompanying json file containing all symbol images used by the service) https://docs.mapbox.com/mapbox-gl-js/style-spec/sprite/
 
 Url to available fonts https://docs.mapbox.com/mapbox-gl-js/style-spec/glyphs/
 
