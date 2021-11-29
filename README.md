@@ -9,13 +9,14 @@ In addition to the styling flexibility provided, increased user interaction is m
 
 
 
-# What are vectortiles good for?
+## What are vectortiles good for?
 Flexible styling
 Reactive web applications
 Specialised use cases
 online clients requiring fast background mapping
 Mobile applications
-what shouldn't you use vectortiles for?
+
+## What shouldn't you use vectortiles for?
 Downloading source data (the data in a vectortile is encoded and has been customised specifically for visualisation)
 GIS analysis (the data model is often too simple and the geometries not accurate enough)
 
