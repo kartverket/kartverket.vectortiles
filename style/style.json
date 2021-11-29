@@ -11,7 +11,7 @@
   "fjellskygge_cache": {
       "type": "raster",
       "tiles": [
-        "http://opencache.statkart.no/gatekeeper/gk/gk.open?service=WMS&request=GetMap&version=1.1.1&BGCOLOR=0xFFFFFF&srs=EPSG:3857&bbox={bbox-epsg-3857}&layers=fjellskygge&transparent=true&width=256&height=256&format=image/png"
+        "https://opencache.statkart.no/gatekeeper/gk/gk.open?service=WMS&request=GetMap&version=1.1.1&BGCOLOR=0xFFFFFF&srs=EPSG:3857&bbox={bbox-epsg-3857}&layers=fjellskygge&transparent=true&width=256&height=256&format=image/png"
     ]
   }
 },
