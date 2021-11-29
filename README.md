@@ -77,7 +77,17 @@ However, it is relatively easy for a user to create a custom style using either 
 
 Thumbnails of styles
 Code examples
-Link to maputnik?
+## Maputnik
+
+[maputnik](https://maputnik.github.io/editor) is an opensource visual editor application for vectortiles services. It's possible to build and run locally, but it also comes with a free web gui which can be used with Kartverkets vectortiles services. 
+
+1. Open https://maputnik.github.io/ 
+2. Click on the 'Open' button in the top menu
+3. In the 'Load from Url' section, paste the following url:  https://cache.kartverket.no/test/styles/landtopo.json
+4. The service and styles will load
+5. Alter the styling through either the gui interface or json editor.
+
+More information about using maputnik can be found here: https://github.com/maputnik/editor/wiki 
 
 ------------------------------------------------------
 
