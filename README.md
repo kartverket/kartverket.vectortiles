@@ -201,7 +201,9 @@ Every layer has an 'objtype' attribute which contains information about what typ
 ## Attributes
 All layers contain the attribute objtype (object type), which describes the specific object type for each individual feature. Certain layers, like adm_grenser and arealdekke, only contain this one attribute.
 
-**Objtype:** Several layers also contain one or more of the following attributes
+**Objtype:** 
+
+Several layers also contain one or more of the following attributes
 
 **Subtype:** a subdivision of objtype, allows for more detailed styling
 **Textstring:** Specific for text layers, contains the text displayed on the map
