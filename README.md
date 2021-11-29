@@ -29,25 +29,19 @@ The tilejson specification was designed as an open way to provide map metadata, 
 
 
 
-The url to the tilejson manifest document for the landtopo sevice is:
+The url to the tilejson manifest document for the landtopo sevice is: https://cache.kartverket.no/test/vectortiles/tilejson/landtopo.json
 
-https://cache.kartverket.no/test/vectortiles/tilejson/landtopo.json
-
-The url can be used to specify service information in various clients. More info information can be found here: https://github.com/mapbox/tilejson-spec
+The url can be used to specify service information in various clients. 
+More info information can be found here: https://github.com/mapbox/tilejson-spec
 
 
 
 ### The document includes information about:
-
-Tile endpoints (url to the service with parameters)
-
-Layers included in the service
-
-Fields for each layer
-
-Zoom levels
-
-Bounding box of the data coverage
+    - Tile endpoints (url to the service with parameters)
+    - Layers included in the service
+    - Fields for each layer
+    - Zoom levels
+    - Bounding box of the data coverage
 
 ------------------------------------------------------
 
