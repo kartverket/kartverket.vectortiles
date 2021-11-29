@@ -88,7 +88,7 @@ One standard font (otherwise known as 'glyphs') are also available from Kartverk
 
 and can be used through this url:
 
-https://cache.kartverket.no/test/fonts/{fontstack}/{range}.pbf"
+https://cache.kartverket.no/test/fonts/{fontstack}/{range}.pbf
 
 (The application will replace the fontstack and range variables automatically as long as one of the above font names are defined as a text-font within a layer. For example: "text-font": ["OpenSansRegular"])
 
