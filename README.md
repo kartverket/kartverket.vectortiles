@@ -37,11 +37,11 @@ More info information can be found here: https://github.com/mapbox/tilejson-spec
 
 
 ### The document includes information about:
-    - Tile endpoints (url to the service with parameters)
-    - Layers included in the service
-    - Fields for each layer
-    - Zoom levels
-    - Bounding box of the data coverage
+Tile endpoints (url to the service with parameters)
+Layers included in the service
+Fields for each layer
+Zoom levels
+Bounding box of the data coverage
 
 ------------------------------------------------------
 
