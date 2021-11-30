@@ -137,7 +137,8 @@ Every layer has an 'objtype' attribute which contains information about what typ
 
 ## Layer overview
 
-![image](https://user-images.githubusercontent.com/2004305/144070702-88c13cfb-0894-4ab3-9a55-d3b727f0b01c.png)
+
+![data_model](https://user-images.githubusercontent.com/2004305/144073927-4fdfa2ae-0961-4179-8e04-0a395a1371be.png)
 
 ##  
 
