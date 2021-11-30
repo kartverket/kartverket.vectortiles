@@ -1650,7 +1650,7 @@
                     "match",
                     ["get", "objtype"],
                     ["LuftledningLH", "Kraftspenn", "Taubane","Skytebaneinnretning","Reingjerde","Molo","Pir","Dam","KaiBrygge","Hoppbakke","Rørgate","SpesiellDetalj","Fløtningsrenne","Steingjerde","AnnetGjerde","Skjerm","Voll","VeggFrittstående","Kulvert","Tunnelportal","FiskehjellMøne","Fisketrapp","Takkant","Taksprang","TakoverbyggKant","Grunnmur","Låvebru","TrappBygg","Veranda","BygningBru","Takplatå"],
-                    "rgba(1, 1, 1, 1)",
+                    "rgba(90, 90, 90, 1)",
 					["Lysløype"],
                     "rgba(250, 235, 0, 1)",
 					["Skitrekk","Gondolbane","Stolheis"],
@@ -1891,7 +1891,7 @@
       "minzoom": 1,
 	  "maxzoom": 15,
       "source": "landtopo",
-      "source-layer": "anleggslinjer",
+      "source-layer": "anleggspunkter",
 	   "filter": [
 					"all",
 					["in","objtype","Hoppbakke"]
@@ -1901,7 +1901,10 @@
 		"icon-image": "hoppbakke",
         "icon-allow-overlap": true,
 		"icon-size": 0.1
-      }
+      },
+	  "paint": {
+		  "icon-opacity": 0.6
+	  }
     },
 		{		
       "id": "vindkraftverk",
@@ -1909,7 +1912,7 @@
       "minzoom": 1,
 	  "maxzoom": 15,
       "source": "landtopo",
-      "source-layer": "anleggslinjer",
+      "source-layer": "anleggspunkter",
 	   "filter": [
 					"all",
 					["in","objtype","Vindkraftverk"]
@@ -1919,7 +1922,10 @@
 		"icon-image": "vindturbin",
         "icon-allow-overlap": true,
 		"icon-size": 0.1
-      }
+      },
+	  "paint": {
+		  "icon-opacity": 0.6
+	  }
     },
 			{		
       "id": "Foss",
@@ -1927,7 +1933,7 @@
       "minzoom": 1,
 	  "maxzoom": 15,
       "source": "landtopo",
-      "source-layer": "anleggslinjer",
+      "source-layer": "anleggspunkter",
 	   "filter": [
 					"all",
 					["in","objtype","Foss"]
@@ -1937,7 +1943,10 @@
 		"icon-image": "prikkerblaa",
         "icon-allow-overlap": true,
 		"icon-size": 3
-      }
+      },
+	  "paint": {
+		  "icon-opacity": 0.6
+	  }
     },
 			{		
       "id": "Tårn",
@@ -1945,7 +1954,7 @@
       "minzoom": 1,
 	  "maxzoom": 15,
       "source": "landtopo",
-      "source-layer": "anleggslinjer",
+      "source-layer": "anleggspunkter",
 	   "filter": [
 					"all",
 					["in","objtype","Tårn"]
@@ -1954,7 +1963,10 @@
         "visibility": "visible",
 		"icon-image": "prikkerblaa",
         "icon-allow-overlap": true
-      }
+      },
+	  "paint": {
+		  "icon-opacity": 0.6
+	  }
     },
 	{		
       "id": "tank",
@@ -1962,7 +1974,7 @@
       "minzoom": 1,
 	  "maxzoom": 15,
       "source": "landtopo",
-      "source-layer": "anleggslinjer",
+      "source-layer": "anleggspunkter",
 	   "filter": [
 					"all",
 					["in","objtype","Tank"]
@@ -1971,7 +1983,10 @@
         "visibility": "visible",
 		"icon-image": "prikkerblack",
         "icon-allow-overlap": true
-      }
+      },
+	  "paint": {
+		  "icon-opacity": 0.6
+	  }
     },
 	{		
       "id": "telemast",
@@ -1979,7 +1994,7 @@
       "minzoom": 1,
 	  "maxzoom": 15,
       "source": "landtopo",
-      "source-layer": "anleggslinjer",
+      "source-layer": "anleggspunkter",
 	   "filter": [
 					"all",
 					["in","objtype","MastTele"]
@@ -1988,7 +2003,10 @@
         "visibility": "visible",
 		"icon-image": "prikkerblack",
         "icon-allow-overlap": true
-      }
+      },
+	  "paint": {
+		  "icon-opacity": 0.6
+	  }
     },
 	{		
       "id": "gruve",
@@ -1996,7 +2014,7 @@
       "minzoom": 1,
 	  "maxzoom": 15,
       "source": "landtopo",
-      "source-layer": "anleggslinjer",
+      "source-layer": "anleggspunkter",
 	   "filter": [
 					"all",
 					["in","objtype","Gruve"]
@@ -2006,7 +2024,10 @@
 		"icon-image": "gruve",
         "icon-allow-overlap": true,
 		"icon-size": 0.1
-      }
+      },
+	  "paint": {
+		  "icon-opacity": 0.6
+	  }
     },
 	{		
       "id": "fyr",
@@ -2014,7 +2035,7 @@
       "minzoom": 1,
 	  "maxzoom": 15,
       "source": "landtopo",
-      "source-layer": "anleggslinjer",
+      "source-layer": "anleggspunkter",
 	   "filter": [
 					"all",
 					["in","objtype","Navigasjonsinstallasjon"]
@@ -2024,7 +2045,10 @@
 		"icon-image": "fyr",
         "icon-allow-overlap": true,
 		"icon-size": 0.1
-      }
+      },
+	  "paint": {
+		  "icon-opacity": 0.6
+	  }
     },
 	{		
       "id": "Campingplass",
@@ -2032,7 +2056,7 @@
       "minzoom": 1,
 	  "maxzoom": 15,
       "source": "landtopo",
-      "source-layer": "anleggslinjer",
+      "source-layer": "anleggspunkter",
 	   "filter": [
 					"all",
 					["in","objtype","Campingplass"]
@@ -2042,7 +2066,10 @@
 		"icon-image": "campingplass_positiv",
         "icon-allow-overlap": true,
 		"icon-size": 0.15
-      }
+      },
+	  "paint": {
+		  "icon-opacity": 0.6
+	  }
     },
 	{		
       "id": "spesielldetalj_P",
@@ -2050,7 +2077,7 @@
       "minzoom": 1,
 	  "maxzoom": 15,
       "source": "landtopo",
-      "source-layer": "anleggslinjer",
+      "source-layer": "anleggspunkter",
 	   "filter": [
 					"all",
 					["in","objtype","SpesiellDetalj"]
@@ -2059,7 +2086,10 @@
         "visibility": "visible",
 		"icon-image": "prikkerblack",
         "icon-allow-overlap": true
-      }
+      },
+	  "paint": {
+		  "icon-opacity": 0.6
+	  }
     },
 	{		
       "id": "bautastatue",
@@ -2067,7 +2097,7 @@
       "minzoom": 1,
 	  "maxzoom": 15,
       "source": "landtopo",
-      "source-layer": "anleggslinjer",
+      "source-layer": "anleggspunkter",
       "layout": {
         "visibility": "visible"
       },
@@ -2088,7 +2118,7 @@
       "minzoom": 1,
 	  "maxzoom": 15,
       "source": "landtopo",
-      "source-layer": "anleggslinjer",
+      "source-layer": "anleggspunkter",
 	  "layout": {
 			"visibility": "visible"
       },
@@ -2119,7 +2149,10 @@
 		"icon-image": "airport-arctic-sdi",
         "icon-allow-overlap": true,
 		"icon-size": 0.05
-      }
+      },
+	  "paint": {
+		  "icon-opacity": 0.6
+	  }
     },
 	{		
       "id": "pois",
