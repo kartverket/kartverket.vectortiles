@@ -49,7 +49,24 @@ More info information can be found here: https://github.com/mapbox/tilejson-spec
 Mapbox
 Leaflet
 OL
-Qgis?
+
+### Qgis
+
+The services can be used natively in QGIS from version 3.14 and up, or through a plugin. The mapbox styles have to be converted to qgis styles on the fly, so the performance may not be as good as in a mapbox client and some styles may not translate perfectly. 
+
+Remember to set the projection of the window to epsg:3857. 
+
+1. Click on 'layer' in the top menu, and then 'Add layer', followed by 'Add Vector Tile Layer'
+2. Create a new, 'Generic' service
+3. Fill out the URL field with: https://cache.kartverket.no/test/vectortiles/landtopo/{z}/{x}/{y}.mvt 
+4. Fill out the Style URL field with https://cache.kartverket.no/test/styles/landtopo.json 
+5. Choose any name you like and change the 'Max. Zoom Level' to 19
+6. Save the service
+7. Choose the service from the drop down box
+8. Click the 'Add' button in the bottom right
+
+
+
 
 ------------------------------------------------------
 
