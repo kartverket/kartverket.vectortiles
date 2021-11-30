@@ -90,7 +90,7 @@ https://cache.kartverket.no/test/styles/landtopo.json
 
 
 
-We have provided 2 default styles so that it is possible to use and look at the service with no extra work needed. These styles have been designed to mirror the cartography of our topo4 and norges_grunnkart raster tile services, so are quite complex and long.
+We currently provide just 1 default style so that it is possible to use and look at the service with no extra work needed. This styles have been designed to mirror the cartography of our topo4 raster tile services, so is quite complex and long. We will be adding more styles (and will include the links here) in the coming weeks.
 
 However, it is relatively easy for a user to create a custom style using either a text editor or an online style editor such as [maputnik](https://maputnik.github.io/editor) or [fresco](https://fresco.go-spatial.org/). in addition to changing the style of the data, its also possible to remove layers or change the drawing order of the layers. By doing this, the user can create a style that is customised to a specific need.
 
