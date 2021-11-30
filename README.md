@@ -24,9 +24,9 @@ In addition to the styling flexibility provided, increased user interaction is m
 
 # URL's
 
-Tiles: https://cache.kartverket.no/test/vectortiles/landtopo/{z}/{x}/{y}.mvt
-Style sheet: https://cache.kartverket.no/test/styles/landtopo.json
-Tilejson: https://cache.kartverket.no/test/vectortiles/tilejson/landtopo.json
+  - Tiles: https://cache.kartverket.no/test/vectortiles/landtopo/{z}/{x}/{y}.mvt
+  - Style sheet: https://cache.kartverket.no/test/styles/landtopo.json
+  - Tilejson: https://cache.kartverket.no/test/vectortiles/tilejson/landtopo.json
 
 ------------------------------------------------------
 
