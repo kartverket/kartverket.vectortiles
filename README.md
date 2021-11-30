@@ -292,7 +292,7 @@ Separate text layer containing road names and numbers. This too is a point layer
      - **Kjørebane:** line in the centre of a carriageway
 
 **vegstatus:** refers to the status of the road. Existing, temporary etc.
-   -*Values:*
+  -*Values:*
      - **P:** Approved planned road
      - **V:** Existing road
 
@@ -301,13 +301,13 @@ Separate text layer containing road names and numbers. This too is a point layer
 **gatenavn:** street name. For example: Main Street
 
 **vegkategori:** Indicates road type. Examples: private road, European route etc.
-   -*Values:*
-    - **E:** Europaveg/ European Route
-    - **F:** Fylkesveg/ County Road
-    - **K:** Kommunal veg/ District Road
-    - **P:** Privat veg/Private Road
-    - **R:** Riksveg/ National Road
-    - **S:** Skogsbilveg/ Forest Road
+  -*Values:*
+     - **E:** Europaveg/ European Route
+     - **F:** Fylkesveg/ County Road
+     - **K:** Kommunal veg/ District Road
+     - **P:** Privat veg/Private Road
+     - **R:** Riksveg/ National Road
+     - **S:** Skogsbilveg/ Forest Road
 
 **medium:** the location of the object relative to the earth's surface
   - *Values:*
