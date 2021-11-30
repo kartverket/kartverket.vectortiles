@@ -1643,7 +1643,7 @@
       "maxzoom": 19,
       "type": "line",
       "source": "landtopo",
-      "source-layer": "Anleggslinjer",
+      "source-layer": "anleggslinjer",
 	  "layout": {},
 	   "paint": {
                 "line-color": [
@@ -1891,7 +1891,7 @@
       "minzoom": 1,
 	  "maxzoom": 15,
       "source": "landtopo",
-      "source-layer": "Anleggspunkter",
+      "source-layer": "anleggslinjer",
 	   "filter": [
 					"all",
 					["in","objtype","Hoppbakke"]
@@ -1909,7 +1909,7 @@
       "minzoom": 1,
 	  "maxzoom": 15,
       "source": "landtopo",
-      "source-layer": "Anleggspunkter",
+      "source-layer": "anleggslinjer",
 	   "filter": [
 					"all",
 					["in","objtype","Vindkraftverk"]
@@ -1927,7 +1927,7 @@
       "minzoom": 1,
 	  "maxzoom": 15,
       "source": "landtopo",
-      "source-layer": "Anleggspunkter",
+      "source-layer": "anleggslinjer",
 	   "filter": [
 					"all",
 					["in","objtype","Foss"]
@@ -1945,7 +1945,7 @@
       "minzoom": 1,
 	  "maxzoom": 15,
       "source": "landtopo",
-      "source-layer": "Anleggspunkter",
+      "source-layer": "anleggslinjer",
 	   "filter": [
 					"all",
 					["in","objtype","Tårn"]
@@ -1962,7 +1962,7 @@
       "minzoom": 1,
 	  "maxzoom": 15,
       "source": "landtopo",
-      "source-layer": "Anleggspunkter",
+      "source-layer": "anleggslinjer",
 	   "filter": [
 					"all",
 					["in","objtype","Tank"]
@@ -1979,7 +1979,7 @@
       "minzoom": 1,
 	  "maxzoom": 15,
       "source": "landtopo",
-      "source-layer": "Anleggspunkter",
+      "source-layer": "anleggslinjer",
 	   "filter": [
 					"all",
 					["in","objtype","MastTele"]
@@ -1996,7 +1996,7 @@
       "minzoom": 1,
 	  "maxzoom": 15,
       "source": "landtopo",
-      "source-layer": "Anleggspunkter",
+      "source-layer": "anleggslinjer",
 	   "filter": [
 					"all",
 					["in","objtype","Gruve"]
@@ -2014,7 +2014,7 @@
       "minzoom": 1,
 	  "maxzoom": 15,
       "source": "landtopo",
-      "source-layer": "Anleggspunkter",
+      "source-layer": "anleggslinjer",
 	   "filter": [
 					"all",
 					["in","objtype","Navigasjonsinstallasjon"]
@@ -2032,7 +2032,7 @@
       "minzoom": 1,
 	  "maxzoom": 15,
       "source": "landtopo",
-      "source-layer": "Anleggspunkter",
+      "source-layer": "anleggslinjer",
 	   "filter": [
 					"all",
 					["in","objtype","Campingplass"]
@@ -2050,7 +2050,7 @@
       "minzoom": 1,
 	  "maxzoom": 15,
       "source": "landtopo",
-      "source-layer": "Anleggspunkter",
+      "source-layer": "anleggslinjer",
 	   "filter": [
 					"all",
 					["in","objtype","SpesiellDetalj"]
@@ -2067,7 +2067,7 @@
       "minzoom": 1,
 	  "maxzoom": 15,
       "source": "landtopo",
-      "source-layer": "Anleggspunkter",
+      "source-layer": "anleggslinjer",
       "layout": {
         "visibility": "visible"
       },
@@ -2088,7 +2088,7 @@
       "minzoom": 1,
 	  "maxzoom": 15,
       "source": "landtopo",
-      "source-layer": "Anleggspunkter",
+      "source-layer": "anleggslinjer",
 	  "layout": {
 			"visibility": "visible"
       },
