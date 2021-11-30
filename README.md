@@ -74,7 +74,8 @@ Remember to set the projection of the window to epsg:3857.
 
 # Style:
 
-The style of the service is defined within a .json file, and contains:
+The styles for vectortile are contained in their own file and written in json.
+All style files contain:
 
 - Urls to one or more data sources (can be vectortiles, raw vector data, wms service osv), https://docs.mapbox.com/mapbox-gl-js/style-spec/sources/
 - Url to a sprite (a single png and accompanying json file containing all symbol images used by the service) https://docs.mapbox.com/mapbox-gl-js/style-spec/sprite/
