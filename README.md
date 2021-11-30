@@ -136,6 +136,9 @@ Every layer has an 'objtype' attribute which contains information about what typ
 
 
 ## Layer overview
+
+![image](https://user-images.githubusercontent.com/2004305/144070702-88c13cfb-0894-4ab3-9a55-d3b727f0b01c.png)
+
 **adm_grenser**
   - objtype
 
