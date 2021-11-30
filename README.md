@@ -129,9 +129,9 @@ Several other fonts are available from the [OpenMapTiles](https://github.com/ope
 # Vector Tile Contents
 We've tried to simplify the data model as much as possible to make it easier to build user defined styles. In effect, the service contains 21 layers, but each layer contains multiple feature types that can be filtered and styled as needed.
 
-Most of the layers contain a mix of data sources from our Kartdata and FKB data products. Because the models for these 2 datasets are very different, not all the attributes will contain values. Some features will have full attribute values for the first 14 zoom levels, but limited values from level 15 to 19, and vice versa.
+Most of the layers contain a mix of data sources from our Kartdata, FKB and Matrikkel data products. Because the models for these 3 datasets are very different, not all the attributes will contain values. Some features will have full attribute values for the first 14 zoom levels, but limited values from level 15 to 19, and vice versa.
 
-Every layer has an 'objtype' attribute which contains information about what type of feature the object is, for example the objtype attribute in the adm_boundaries layer includes the values; 'national boundary', 'county', 'municipality' and 'territorial boundary'.
+Every layer has an 'objtype' attribute which contains information about what type of feature the object is, for example the objtype attribute in the adm_boundaries layer includes the values; 'Riksgrense'(national boundary), 'Fylke'(county), 'Kommune'(municipality) and 'Territorial grense'(territorial boundary).
 
 
 
