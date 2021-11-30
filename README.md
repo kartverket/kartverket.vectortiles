@@ -301,7 +301,7 @@ Separate text layer containing road names and numbers. This too is a point layer
 **gatenavn:** street name. For example: Main Street
 
 **vegkategori:** Indicates road type. Examples: private road, European route etc.
-  - *Values:*
+  -*Values:*
     - **E:** Europaveg/ European Route
     - **F:** Fylkesveg/ County Road
     - **K:** Kommunal veg/ District Road
