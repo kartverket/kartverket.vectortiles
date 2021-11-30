@@ -97,7 +97,7 @@ However, it is relatively easy for a user to create a custom style using either 
 
 Thumbnails of styles
 Code examples
-## Maputnik
+### Maputnik
 
 [maputnik](https://maputnik.github.io/editor) is an opensource visual editor application for vectortiles services. It's possible to build and run locally, but it also comes with a free web gui which can be used with Kartverkets vectortiles services. 
 
