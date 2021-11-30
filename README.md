@@ -97,7 +97,7 @@ However, it is relatively easy for a user to create a custom style using either 
 
 Thumbnails of styles
 Code examples
-### Maputnik
+## Maputnik
 
 [maputnik](https://maputnik.github.io/editor) is an opensource visual editor application for vectortiles services. It's possible to build and run locally, but it also comes with a free web gui which can be used with Kartverkets vectortiles services. 
 
@@ -129,9 +129,9 @@ Several other fonts are available from the [OpenMapTiles](https://github.com/ope
 # Vector Tile Contents
 We've tried to simplify the data model as much as possible to make it easier to build user defined styles. In effect, the service contains 21 layers, but each layer contains multiple feature types that can be filtered and styled as needed.
 
-Most of the layers contain a mix of data sources from our Kartdata, FKB and Matrikkel data products. Because the models for these 3 datasets are very different, not all the attributes will contain values. Some features will have full attribute values for the first 14 zoom levels, but limited values from level 15 to 19, and vice versa.
+Most of the layers contain a mix of data sources from our Kartdata and FKB data products. Because the models for these 2 datasets are very different, not all the attributes will contain values. Some features will have full attribute values for the first 14 zoom levels, but limited values from level 15 to 19, and vice versa.
 
-Every layer has an 'objtype' attribute which contains information about what type of feature the object is, for example the objtype attribute in the adm_boundaries layer includes the values; 'Riksgrense'(national boundary), 'Fylke'(county), 'Kommune'(municipality) and 'Territorial grense'(territorial boundary).
+Every layer has an 'objtype' attribute which contains information about what type of feature the object is, for example the objtype attribute in the adm_boundaries layer includes the values; 'national boundary', 'county', 'municipality' and 'territorial boundary'.
 
 
 
@@ -229,9 +229,7 @@ Every layer has an 'objtype' attribute which contains information about what typ
 
 
 ## Attributes
-All layers contain the attribute objtype (object type), which describes the specific object type for each individual feature. Certain layers, like adm_grenser and arealdekke, only contain this one attribute.
-
-**Objtype:** 
+All layers contain the attribute **objtype:**  (object type), which describes the specific object type for each individual feature. Certain layers, like adm_grenser and arealdekke, only contain this one attribute.
 
 Several layers also contain one or more of the following attributes
 
@@ -239,7 +237,7 @@ Several layers also contain one or more of the following attributes
 **Textstring:** Specific for text layers, contains the text displayed on the map
 **Medium:** Describes feature qualities such as location of an with respect to the earth surface (tunnel vs bridge, inside a building etc. for roads or paths, on the ground or on a glacier for hoydekurver or trigonometriske punkt)
 
-In addition there other layer-specific attributes, such as betjeningsgrad, tilgjhengelighet, hoyde, makshoyde, vannbredde vegkategori, motorvegtype,, rutemerking, belysning or retningsverdi.
+In addition there are other layer-specific attributes, such as betjeningsgrad, tilgjhengelighet, hoyde, makshoyde, vannbredde vegkategori, motorvegtype,, rutemerking, belysning or retningsverdi.
 
 Layers such as veglinjer or bygningspunkt might contain one or more of these.
 
@@ -276,7 +274,7 @@ Contains area names, heights and addresses. This is a point type layer, however 
      - **Kommune:** names of municipalities
      - **Vannhoyde:** height of a body of water
      - **høydetall:** height of terrain/peaks
-         - 1000,2000,3000,4000,5000,6000,7000: All other stedsnavn (place names), such as cities, rural areas, national parks, mountains, lakes or rivers. The numbers 1000 - 7000 refer to different "categories" of named areas/objects. See code lists for more information
+     - **1000,2000,3000,4000,5000,6000,7000:** All other stedsnavn (place names), such as cities, rural areas, national parks, mountains, lakes or rivers. The numbers 1000 - 7000 refer to different "categories" of named areas/objects. See code lists for more information
          - Examples: 1000 = Landforms, 3000 = fresh water bodies, 5000 = buildings and populated places
       - **Textstring:** Textstrings, labels and numbers displayed on the map
       - **Subtype:** Subdivision of Stedsnavn, more specifically objtypes 1000 - 7000. None of the other objtypes have subtypes. See code lists for more information.
@@ -289,17 +287,21 @@ Separate text layer containing road names and numbers. This too is a point layer
 ### Attributes:
 
 **objtype**
-  - *Values:'
+  - *Values:*
      - **VegSenterlinje:** line in the centre between two road shoulders
      - **Kjørebane:** line in the centre of a carriageway
+
 **vegstatus:** refers to the status of the road. Existing, temporary etc.
-  -Values:
-   - P: Approved planned road
-   - V: Existing road
+  -*Values:*
+   - **P:** Approved planned road
+   - **V:** Existing road
+
 **vegnummer:** road number
+
 **gatenavn:** street name. For example: Main Street
+
 **vegkategori:** Indicates road type. Examples: private road, European route etc.
-  - Values:
+  - *Values:*
     - **E:** Europaveg/ European Route
     - **F:** Fylkesveg/ County Road
     - **K:** Kommunal veg/ District Road
@@ -532,6 +534,8 @@ Road infrastructure presented as a line layer. This layer is only available on z
 > ## vegavgrensning
 Line layer representing outlines of roads and paths, including roadways, pavements and cycle paths. This layer is only available on zoom levels 14 and higher
 
+### Attributes:
+
 **objtype:** There are 16 different objtypes within the vegavgresning layer. the 7 most abundant of these are listed below 
   - *Values:*
      - **Vegdekkekant:** general road surface outline
@@ -560,6 +564,8 @@ Line layer representing outlines of roads and paths, including roadways, pavemen
 > ## stier
 A line layer containing all roads, paths and trails in the terrain or on uncultivated land 
 
+### Attributes:
+
 **objtype**
   - *Values:*
      - **Sti:** distinct path in the terrain which has become pronounced through many years' use or prepared for general travel on foot.
@@ -580,6 +586,8 @@ A line layer containing all roads, paths and trails in the terrain or on unculti
 
 > ## jernbane
 Line layer which represents a single or several parallel tracks as part of a railway line. 
+
+### Attributes:
 
 **objtype**
   - *Values:*
@@ -606,6 +614,8 @@ Line layer which represents a single or several parallel tracks as part of a rai
 > ## ferger
 Line layer representing all routes serviced by ferries
 
+### Attributes:
+
 **objtype**
   - *Values:*
 **bilferjestrekning:** ferry route serviced by car ferries as part of the road network 
@@ -616,6 +626,8 @@ passasjerferjestrekning: ferry route for transportation of people and goods. Whe
 
 > ## samferdsel punkt
 All point data related to infrastructure, including stations, airports and parking spaces. Several of these features are also available as polygon features through anleggsomrader or arealdekke on higher zoom levels
+
+### Attributes:
 
 **objtype**
   - *Values:*
@@ -634,6 +646,8 @@ All point data related to infrastructure, including stations, airports and parki
 > ## anleggslinjer
 Installation and construction line type data. Includes construction lines, outlines and boundaries, as well as electrical wires and lines conducting electrical power over large distances
 
+### Attributes:
+
 **objtype:** There is a quite extensive list of different values for anleggslinjer objtype. All values can be found in code lists. Some examples include:
   - *Values:*
      - **Skitrekk:** Ski lift
@@ -648,6 +662,8 @@ Installation and construction line type data. Includes construction lines, outli
 > ## anleggspunkter
 Installation and construction point type data. Includes construction points, suck as towers, wind turbines etc.
 
+### Attributes:
+
 **objtype:** There is a quite extensive list of different values for anleggslinjer objtype. All values can be found in code lists. Some examples include: 
   - *Values:*
      - **tårn:** tower
@@ -660,6 +676,8 @@ Installation and construction point type data. Includes construction points, suc
 
 > ## anleggsomrader
 Installation and construction polygon type data. Only available on zoom levels 13 and higher
+
+### Attributes:
 
 **objtype:** There is a quite extensive list of different values for anleggsomrader objtype, several of which correspond to objtypes in anleggslinjer and anleggspunkter. All values can be found in code lists. Some examples include :
   - *Values:*
