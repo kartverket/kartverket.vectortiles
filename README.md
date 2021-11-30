@@ -360,6 +360,8 @@ Landscape elevation represented in meters above sea level in a line layer. Used 
 **objtype**
   - *Values:*
      - **Høydekurve**
+     - **Forsenkningskurve**
+     - **Hjelpekurve**
  
 **medium:** Describes ground surface type
   - *Values:*
