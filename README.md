@@ -159,6 +159,9 @@ Layers such as veglinjer or bygningspunkt might contain one or more of these.
 
 
 ## Detailed Data model
+##  
+
+
 
 
 
