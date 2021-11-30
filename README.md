@@ -292,9 +292,9 @@ Separate text layer containing road names and numbers. This too is a point layer
      - **Kjørebane:** line in the centre of a carriageway
 
 **vegstatus:** refers to the status of the road. Existing, temporary etc.
-  -*Values:*
-   - **P:** Approved planned road
-   - **V:** Existing road
+   -*Values:*
+     - **P:** Approved planned road
+     - **V:** Existing road
 
 **vegnummer:** road number
 
@@ -386,7 +386,7 @@ Landscape elevation represented in meters above sea level in a line layer. Used 
      - **Hjelpekurve**
  
 **medium:** Describes ground surface type
-  - *Values:*
+   - *Values:*
      - **I:** isbre/glacier
      - **T:** Terreng/terrain
 
@@ -427,7 +427,7 @@ Vannlinje contains all water lines, mostly rivers. Water polygons can be found i
 ### Attributes: 
 
 **objtype**
-  - *Values:'
+  - *Values:*
      - **ElvBekk:** Rivers and streams
      - **FlomløpKant:** Demarkation line for large river courses where water flow is occational due to regulation or other causes. only available on zoom level 13
 
