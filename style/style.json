@@ -16,7 +16,7 @@
   }
 },
   
-  "sprite": "https://cache.kartverket.no/test/styles/landtopo.json",
+  "sprite": "https://cache.kartverket.no/test/styles/landtopo",
   "glyphs": "https://cache.kartverket.no/test/fonts/{fontstack}/{range}.pbf",
 	
   "layers": [
