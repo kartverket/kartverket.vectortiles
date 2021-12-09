@@ -323,6 +323,10 @@
       "source": "landtopo",
       "source-layer": "bygninger",
 	  "layout": {},
+	"filter": [
+			"all",
+			["==","subtype","PblTiltak"]
+		],
       "paint": {
                 "fill-extrusion-color": [
                     "match",
