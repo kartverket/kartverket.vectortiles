@@ -629,9 +629,7 @@ Matrikkel (cadastral data)
 
 These data sources can be further explored within the [Norwegian national geoportal](https://www.geonorge.no/en) 
 
-
-In depth description of data layers
-In depth description per zoom level
+In depth information about which object types are available on which zoom levels can be found in the [zoom levels overview document](zoom_level_overview/vt_zoomlevel_overview.xlsx)
 
 # FAQ's
 
