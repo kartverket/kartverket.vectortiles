@@ -19,7 +19,7 @@
   "sprite": "https://cache.kartverket.no/test/styles/landtopo",
   "glyphs": "https://cache.kartverket.no/test/fonts/{fontstack}/{range}.pbf",
 	
-  "layers": [
+ "layers": [
   {
       "id": "hoydelag",
       "minzoom": 1,
@@ -205,6 +205,96 @@
 					"rgba(50, 155, 254, 1)",
 			"line-width": 0.5
 			}
+		},	
+		{
+	
+	 "id": "hoydekurver",
+      "minzoom": 1,
+      "maxzoom": 15,
+      "type": "line",
+      "source": "landtopo",
+      "source-layer": "hoydekurver",
+	  "layout": {},
+	  	  "filter": [
+				    "all",
+					["==","objtype","Høydekurve"],
+					["!=","medium",""]
+				     ],	
+      "paint": {
+                "line-color": [
+                    "match",
+                    ["get", "medium"],
+                    ["T"],
+					"rgba(200, 133, 70, 1)",
+					["I"],
+                    "rgba(1, 179, 254, 1)",
+                    "rgba(1, 254, 254, 0)"
+                ],
+				"line-width": 0.3
+			}
+		},
+		{
+		
+		 "id": "tellekurver",
+      "minzoom": 11,
+      "maxzoom": 19,
+      "type": "line",
+      "source": "landtopo",
+      "source-layer": "hoydekurver",
+	  "layout": {},
+	  "filter": [
+				    "all",
+					["==","objtype","Høydekurve"],
+					["in","hoyde","0","100","200","300","400","500","600","700","800","900","1000","1100","1200","1300","1400","1500","1600","1700","1800","1900","2000","2100","2200","2300","2400","2500","2600","2700","2800","2900","3000"]
+				],	
+      "paint": {
+                "line-color":  [
+                    "match",
+                    ["get", "medium"],
+                    ["T"],
+					"rgba(200, 133, 70, 1)",
+					["I"],
+                    "rgba(1, 179, 254, 1)",
+                    "rgba(1, 254, 254, 0)"
+                ],
+				"line-width": 1
+			}
+		},{
+			
+	  "id": "fkbhoydekurve",
+      "minzoom": 1,
+      "maxzoom": 19,
+      "type": "line",
+      "source": "landtopo",
+      "source-layer": "hoydekurver",
+	  "layout": {},
+	  "filter": [
+					"all",
+					["==","objtype","Høydekurve"],
+					["==","medium",""]
+				],
+	  "paint": {
+                "line-color": "rgba(200, 133, 70, 1)",
+				"line-width": 0.5
+			}		
+		},{
+			
+	  "id": "fkbforsenkningskurve",
+      "minzoom": 1,
+      "maxzoom": 19,
+      "type": "line",
+      "source": "landtopo",
+      "source-layer": "hoydekurver",
+	  "layout": {},
+	  "filter": [
+					"all",
+					["==","objtype","Forsenkningskurve"],
+					["==","medium","NA"]
+				],
+	  "paint": {
+                "line-color": "rgba(200, 133, 70, 1)",
+				"line-width": 0.5
+			}		
 		},
 	
 				{
@@ -260,6 +350,8 @@
                     "rgba(224,255,255, 1)",
 					["Tank"],
                     "rgba(128,128,128, 1)",
+					["Bru"],
+                    "rgba(178,178,178, 1)",
                     "rgba(250, 217, 188, 1)"
                 ]
         }
@@ -323,10 +415,6 @@
       "source": "landtopo",
       "source-layer": "bygninger",
 	  "layout": {},
-	"filter": [
-			"all",
-			["==","subtype","PblTiltak"]
-		],
       "paint": {
                 "fill-extrusion-color": [
                     "match",
@@ -533,98 +621,6 @@
 				"line-dasharray": [10,3]
 			}
 		},		
-	
-		{
-	
-	 "id": "hoydekurver",
-      "minzoom": 1,
-      "maxzoom": 15,
-      "type": "line",
-      "source": "landtopo",
-      "source-layer": "hoydekurver",
-	  "layout": {},
-	  	  "filter": [
-				    "all",
-					["==","objtype","Høydekurve"],
-					["!=","medium",""]
-				     ],	
-      "paint": {
-                "line-color": [
-                    "match",
-                    ["get", "medium"],
-                    ["T"],
-					"rgba(200, 133, 70, 1)",
-					["I"],
-                    "rgba(1, 179, 254, 1)",
-                    "rgba(1, 254, 254, 0)"
-                ],
-				"line-width": 0.3
-			}
-		},{
-		
-		 "id": "tellekurver",
-      "minzoom": 11,
-      "maxzoom": 19,
-      "type": "line",
-      "source": "landtopo",
-      "source-layer": "hoydekurver",
-	  "layout": {},
-	  "filter": [
-				    "all",
-					["==","objtype","Høydekurve"],
-					["in","hoyde","0","100","200","300","400","500","600","700","800","900","1000","1100","1200","1300","1400","1500","1600","1700","1800","1900","2000","2100","2200","2300","2400","2500","2600","2700","2800","2900","3000"]
-				],	
-      "paint": {
-                "line-color":  [
-                    "match",
-                    ["get", "medium"],
-                    ["T"],
-					"rgba(200, 133, 70, 1)",
-					["I"],
-                    "rgba(1, 179, 254, 1)",
-                    "rgba(1, 254, 254, 0)"
-                ],
-				"line-width": 1
-			}
-		},{
-			
-	  "id": "fkbhoydekurve",
-      "minzoom": 1,
-      "maxzoom": 19,
-      "type": "line",
-      "source": "landtopo",
-      "source-layer": "hoydekurver",
-	  "layout": {},
-	  "filter": [
-					"all",
-					["==","objtype","Høydekurve"],
-					["==","medium",""]
-				],
-	  "paint": {
-                "line-color": "rgba(200, 133, 70, 1)",
-				"line-width": 0.5
-			}		
-		},{
-			
-	  "id": "fkbforsenkningskurve",
-      "minzoom": 1,
-      "maxzoom": 19,
-      "type": "line",
-      "source": "landtopo",
-      "source-layer": "hoydekurver",
-	  "layout": {},
-	  "filter": [
-					"all",
-					["==","objtype","Forsenkningskurve"],
-					["==","medium","NA"]
-				],
-	  "paint": {
-                "line-color": "rgba(200, 133, 70, 1)",
-				"line-width": 0.5
-			}		
-		},
-	
-	
 	{
         "id": "verneomrader",
         "minzoom": 1,
@@ -2322,52 +2318,7 @@
         "text-halo-width": 1.5,
         "text-halo-color": "rgba(254,254,229,1)"
       }
-      },		
-	  {
-            "id": "vegnavn",
-            "type": "symbol",
-            "source": "landtopo",
-            "source-layer": "vegnavn",
-			"minzoom": 6,
-			"filter": [
-					"all",
-					["!=","gatenavn",""]
-				],
-            "layout": {
-				"symbol-placement": "line",
-				"text-font": ["OpenSansRegular"],
-                "text-field": ["to-string",["get", "gatenavn"]],
-                "text-size": 13,
-				"text-padding": 80
-            },
-            "paint": {
-				"text-color": "rgb(30,30,30)"
-            }
-        },
-		{
-            "id": "europavegnavn",
-            "type": "symbol",
-            "source": "landtopo",
-            "source-layer": "vegnavn",
-			"minzoom": 6,
-			"filter": [
-					"all",
-					["==","vegkategori","E"]
-				],
-            "layout": {
-				"symbol-placement": "point",
-				"text-font": ["OpenSansRegular"],
-                "text-field": ["to-string",["concat", ["get", "vegkategori"],["get", "vegnummer"]]],
-                "text-size": 11,
-				"icon-image": "europaveg",
-				"icon-text-fit": "both",
-				"icon-text-fit-padding": [2,2,2,2],
-				"text-padding": 100
-            },
-            "paint": {
-				"text-color": "rgb(254,254,254)"
-            }
-        },
+      },	
 		{
             "id": "adresser",
             "type": "symbol",
@@ -2393,6 +2344,65 @@
                 "text-color": "rgb(1,1,1)",
 		"text-halo-width": 1,
       "text-halo-color": "rgb(254,254,240)"
+            }
+        },	  
+	  {
+            "id": "vegnavn",
+            "type": "symbol",
+            "source": "landtopo",
+            "source-layer": "vegnavn",
+			"minzoom": 6,
+			"filter": [
+					"all",
+					["!=","gatenavn",""]
+				],
+            "layout": {
+				"symbol-placement": "line",
+				"text-font": ["OpenSansRegular"],
+                "text-field": ["to-string",["get", "gatenavn"]],
+                "text-size": 13,
+				"text-allow-overlap": false,
+				"text-padding": [
+					"interpolate",
+					["linear"],
+					["zoom"],
+					15,40,
+					16,60,
+					18,80
+					]
+            },
+            "paint": {
+				"text-color": "rgb(30,30,30)"
+            }
+        },
+		{
+            "id": "europavegnavn",
+            "type": "symbol",
+            "source": "landtopo",
+            "source-layer": "vegnavn",
+			"minzoom": 1,
+			"filter": [
+					"all",
+					["==","vegkategori","E"]
+				],
+            "layout": {
+				"symbol-placement": "point",
+				"text-font": ["OpenSansRegular"],
+                "text-field": ["to-string",["concat", ["get", "vegkategori"],["get", "vegnummer"]]],
+                "text-size": 11,
+				"icon-image": "europaveg",
+				"icon-text-fit": "both",
+				"icon-text-fit-padding": [2,2,2,2],
+				"text-padding": [
+					"interpolate",
+					["linear"],
+					["zoom"],
+					12,100,
+					18,20
+					]
+            },
+            "paint": {
+				"text-color": "rgb(254,254,254)"
             }
         },
 		{
