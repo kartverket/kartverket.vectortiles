@@ -56,10 +56,10 @@ More info information can be found here: https://github.com/mapbox/tilejson-spec
 
 # Examples:
 
+OL - https://github.com/kartverket/vectorTilesDemo ( with https://github.com/openlayers/ol-mapbox-style )
 **To-Do**
 Mapbox
 Leaflet
-OL
 
 ### Qgis
 
