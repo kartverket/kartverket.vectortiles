@@ -26,7 +26,7 @@ In addition to the styling flexibility provided, increased user interaction is m
 # URL's
 
 - Tiles: https://cache.kartverket.no/test/vectortiles/landtopo/{z}/{x}/{y}.mvt
-- Style sheet: https://vectortiles.kartverket.no/landtopo/v1/styles/landtopo.json
+- Style sheet: https://vectortiles.kartverket.no/styles/v1/landtopo/style.json
 - Tilejson: https://cache.kartverket.no/test/vectortiles/tilejson/landtopo.json
 
 ---
@@ -65,7 +65,7 @@ Remember to set the projection of the window to epsg:3857.
 1. Click on 'layer' in the top menu, and then 'Add layer', followed by 'Add Vector Tile Layer'
 2. Create a new, 'Generic' service
 3. Fill out the URL field with: https://cache.kartverket.no/test/vectortiles/landtopo/{z}/{x}/{y}.mvt
-4. Fill out the Style URL field with https://cache.kartverket.no/test/styles/landtopo.json
+4. Fill out the Style URL field with https://vectortiles.kartverket.no/styles/v1/landtopo/style.json
 5. Choose any name you like and change the 'Max. Zoom Level' to 19
 6. Save the service
 7. Choose the service from the drop down box
@@ -87,7 +87,7 @@ All style files contain:
 
 ### Links to default styles:
 
-https://cache.kartverket.no/test/styles/landtopo.json
+https://vectortiles.kartverket.no/styles/v1/landtopo/style.json
 
 We currently provide just 1 default style so that it is possible to use and look at the service with no extra work needed. This styles have been designed to mirror the cartography of our topo4 raster tile services, so is quite complex and long. We will be adding more styles (and will include the links here) in the coming weeks.
 
@@ -102,7 +102,7 @@ Code examples
 
 1. Open https://maputnik.github.io/
 2. Click on the 'Open' button in the top menu
-3. In the 'Load from Url' section, paste the following url: https://cache.kartverket.no/test/styles/landtopo.json
+3. In the 'Load from Url' section, paste the following url: https://vectortiles.kartverket.no/styles/v1/landtopo/style.json
 4. The service and styles will load
 5. Alter the styling through either the gui interface or json editor.
 

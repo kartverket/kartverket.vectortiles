@@ -29,10 +29,10 @@
 - [medium](https://register.geonorge.no/sosi-kodelister/kartdata/mediumsamferdsel)
 
 ## Vegflater
-- [medium](https://register.geonorge.no/sosi-kodelister/kartdata/mediumh%C3%B8yde)
+- [medium](https://register.geonorge.no/sosi-kodelister/fkb/generell/5.0/medium)
 
 ## Vegavgrensning:
-- [medium](https://register.geonorge.no/sosi-kodelister/kartdata/mediumh%C3%B8yde)
+- [medium](https://register.geonorge.no/sosi-kodelister/kartdata/mediumsamferdsel)
 
 ## Hoydekurver
 - [medium](https://register.geonorge.no/sosi-kodelister/kartdata/mediumh%C3%B8yde)
@@ -40,7 +40,8 @@
 ## tekst
 FKB together with kartdata, depending on zoom level
 - subtype - (navneobjekttype)
-    - [navneobjektgruppe-kode](https://register.geonorge.no/sosi-kodelister/navneobjektgruppe-kode) 
+    - [navneobjekthovedgruppe](https://register.geonorge.no/sosi-kodelister/navneobjekthovedgruppe-kode)
+    - [navneobjektgruppe](https://register.geonorge.no/sosi-kodelister/navneobjektgruppe-kode) 
     - [navneobjekttype](https://register.geonorge.no/sosi-kodelister/stedsnavn/navneobjekttype) 
 
 ## pois
