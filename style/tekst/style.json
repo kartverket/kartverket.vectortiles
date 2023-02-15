@@ -1,0 +1,81 @@
+{
+  "version": 8,
+  "name": "tekst",
+  "sources": {
+    "landtopo": {
+      "type": "vector",
+      "tiles": ["https://cache.kartverket.no/test/vectortiles/landtopo/{z}/{x}/{y}.mvt"]
+    }
+  },
+
+  "sprite": "https://vectortiles.kartverket.no/styles/v1/landtopo/landtopo",
+  "glyphs": "https://cache.kartverket.no/test/fonts/{fontstack}/{range}.pbf",
+
+  "layers": [
+    {
+      "id": "adm_enheter",
+      "type": "symbol",
+      "source": "landtopo",
+      "source-layer": "tekst",
+      "minzoom": 4,
+      "maxzoom": 15,
+      "filter": ["all", ["in", "objtype", "StedsnavnTekst", "Kommune"]],
+      "layout": {
+        "text-allow-overlap": false,
+        "text-rotate": ["match", ["get", "objtype"], ["StedsnavnTekst"], 10.65, ["Kommune"], 0, 50],
+        "text-font": ["OpenSansRegular"],
+        "text-field": ["to-string", ["get", "textstring"]],
+        "text-size": ["match", ["get", "objtype"], ["StedsnavnTekst"], 16, ["Kommune"], 14.5, 1]
+      },
+      "paint": {
+        "text-color": ["match", ["get", "objtype"], ["StedsnavnTekst"], "rgba(153, 77, 0, 1)", ["Kommune"], "rgba(110, 56, 1, 1)", "rgba(1, 254, 254, 0)"],
+        "text-halo-width": 1,
+        "text-halo-color": "rgb(254,254,240)"
+      }
+    },
+    {
+      "id": "stedsnavn",
+      "type": "symbol",
+      "source": "landtopo",
+      "source-layer": "tekst",
+      "minzoom": 7,
+      "maxzoom": 19,
+      "filter": [
+        "all",
+        [
+          "!in",
+          "objtype",
+          "høydetallVann_hoydetall_5",
+          "høydetallPunkt_hoydetall_5",
+          "høydetallKurve_hoydetall_5",
+          "vannhøyde_250",
+          "vannhøyde_100",
+          "vannhøyde_50",
+          "StedsnavnTekst",
+          "Kommune"
+        ]
+      ],
+      "layout": {
+        "text-allow-overlap": false,
+        "text-font": ["OpenSansRegular"],
+        "text-field": ["to-string", ["get", "textstring"]],
+        "text-size": ["match", ["get", "objtype"], ["5000", "6000"], 11, ["2000", "3000", "4000", "8000"], 12, ["1000"], 13, ["7000"], 14, 16]
+      },
+      "paint": {
+        "text-color": [
+          "match",
+          ["get", "objtype"],
+          ["7000"],
+          "rgba(153, 77, 0, 1)",
+          ["2000", "3000"],
+          "rgba(0, 92, 230, 1)",
+          ["1000", "4000", "5000", "6000", "8000"],
+          "rgba(0, 0, 0, 1)",
+          "rgba(0,0,0,0)"
+        ],
+        "text-halo-width": 1,
+        "text-halo-color": "rgb(254,254,240)"
+      }
+    }
+  ]
+}

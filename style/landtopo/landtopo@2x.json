@@ -1,0 +1,835 @@
+{
+  "Avfallspunkt_blaa": {
+    "height": 1254,
+    "pixelRatio": 2,
+    "width": 1276,
+    "x": 1276,
+    "y": 0
+  },
+  "Avfallspunkt_brun": {
+    "height": 1254,
+    "pixelRatio": 2,
+    "width": 1276,
+    "x": 1537,
+    "y": 1738
+  },
+  "Avfallspunkt_gronn": {
+    "height": 1254,
+    "pixelRatio": 2,
+    "width": 1276,
+    "x": 2813,
+    "y": 1738
+  },
+  "Avfallspunkt_mobil": {
+    "height": 1738,
+    "pixelRatio": 2,
+    "width": 1276,
+    "x": 0,
+    "y": 0
+  },
+  "Avfallspunkt_oransje": {
+    "height": 1254,
+    "pixelRatio": 2,
+    "width": 1276,
+    "x": 2552,
+    "y": 0
+  },
+  "Avfallspunkt_rod": {
+    "height": 1254,
+    "pixelRatio": 2,
+    "width": 1276,
+    "x": 3828,
+    "y": 0
+  },
+  "Avfallspunkt_svart": {
+    "height": 1254,
+    "pixelRatio": 2,
+    "width": 1276,
+    "x": 0,
+    "y": 3338
+  },
+  "Beredskapspunkt_annen": {
+    "height": 200,
+    "pixelRatio": 2,
+    "width": 200,
+    "x": 3500,
+    "y": 5242
+  },
+  "Beredskapspunkt_baatshake": {
+    "height": 200,
+    "pixelRatio": 2,
+    "width": 200,
+    "x": 3700,
+    "y": 5242
+  },
+  "Beredskapspunkt_brannslukning": {
+    "height": 200,
+    "pixelRatio": 2,
+    "width": 200,
+    "x": 3900,
+    "y": 5242
+  },
+  "Beredskapspunkt_nodplakatInfopunkt": {
+    "height": 200,
+    "pixelRatio": 2,
+    "width": 200,
+    "x": 4100,
+    "y": 5242
+  },
+  "Beredskapspunkt_oljelenser": {
+    "height": 200,
+    "pixelRatio": 2,
+    "width": 200,
+    "x": 4300,
+    "y": 5242
+  },
+  "Beredskapspunkt_redningsboye": {
+    "height": 200,
+    "pixelRatio": 2,
+    "width": 200,
+    "x": 4500,
+    "y": 5242
+  },
+  "Beredskapspunkt_stige": {
+    "height": 200,
+    "pixelRatio": 2,
+    "width": 200,
+    "x": 4700,
+    "y": 5242
+  },
+  "Drivstofftilkobling_blaa_fast": {
+    "height": 400,
+    "pixelRatio": 2,
+    "width": 200,
+    "x": 1886,
+    "y": 3338
+  },
+  "Drivstofftilkobling_blaa_mobil": {
+    "height": 400,
+    "pixelRatio": 2,
+    "width": 200,
+    "x": 2086,
+    "y": 3338
+  },
+  "Drivstofftilkobling_graa_fast": {
+    "height": 400,
+    "pixelRatio": 2,
+    "width": 200,
+    "x": 2286,
+    "y": 3338
+  },
+  "Drivstofftilkobling_graa_mobil": {
+    "height": 400,
+    "pixelRatio": 2,
+    "width": 200,
+    "x": 2486,
+    "y": 3338
+  },
+  "Drivstofftilkobling_gronn_fast": {
+    "height": 400,
+    "pixelRatio": 2,
+    "width": 200,
+    "x": 2686,
+    "y": 3338
+  },
+  "Drivstofftilkobling_gronn_mobil": {
+    "height": 400,
+    "pixelRatio": 2,
+    "width": 200,
+    "x": 2886,
+    "y": 3338
+  },
+  "Drivstofftilkobling_svart_fast": {
+    "height": 400,
+    "pixelRatio": 2,
+    "width": 200,
+    "x": 3086,
+    "y": 3338
+  },
+  "Drivstofftilkobling_svart_mobil": {
+    "height": 400,
+    "pixelRatio": 2,
+    "width": 200,
+    "x": 3286,
+    "y": 3338
+  },
+  "Drivstofftilkobling_svartgronn_fast": {
+    "height": 400,
+    "pixelRatio": 2,
+    "width": 200,
+    "x": 3486,
+    "y": 3338
+  },
+  "Drivstofftilkobling_svartgronn_mobil": {
+    "height": 400,
+    "pixelRatio": 2,
+    "width": 200,
+    "x": 3686,
+    "y": 3338
+  },
+  "Fender_blaa": {
+    "height": 120,
+    "pixelRatio": 2,
+    "width": 120,
+    "x": 1400,
+    "y": 5492
+  },
+  "Fender_flytende": {
+    "height": 314,
+    "pixelRatio": 2,
+    "width": 250,
+    "x": 1810,
+    "y": 4592
+  },
+  "Fender_graa": {
+    "height": 120,
+    "pixelRatio": 2,
+    "width": 120,
+    "x": 1520,
+    "y": 5492
+  },
+  "Fender_gronn": {
+    "height": 120,
+    "pixelRatio": 2,
+    "width": 120,
+    "x": 1640,
+    "y": 5492
+  },
+  "Fender_oransje": {
+    "height": 120,
+    "pixelRatio": 2,
+    "width": 120,
+    "x": 1760,
+    "y": 5492
+  },
+  "Fortoyningsinnretning_blaa": {
+    "height": 320,
+    "pixelRatio": 2,
+    "width": 200,
+    "x": 1010,
+    "y": 4592
+  },
+  "Fortoyningsinnretning_boye": {
+    "height": 314,
+    "pixelRatio": 2,
+    "width": 250,
+    "x": 2060,
+    "y": 4592
+  },
+  "Fortoyningsinnretning_graa": {
+    "height": 320,
+    "pixelRatio": 2,
+    "width": 200,
+    "x": 1210,
+    "y": 4592
+  },
+  "Fortoyningsinnretning_gronn": {
+    "height": 320,
+    "pixelRatio": 2,
+    "width": 200,
+    "x": 1410,
+    "y": 4592
+  },
+  "Fortoyningsinnretning_oransje": {
+    "height": 320,
+    "pixelRatio": 2,
+    "width": 200,
+    "x": 1610,
+    "y": 4592
+  },
+  "HP4": {
+    "height": 250,
+    "pixelRatio": 2,
+    "width": 250,
+    "x": 2966,
+    "y": 4592
+  },
+  "Havnesensor_annen_fast": {
+    "height": 400,
+    "pixelRatio": 2,
+    "width": 200,
+    "x": 3886,
+    "y": 3338
+  },
+  "Havnesensor_annen_flytende": {
+    "height": 400,
+    "pixelRatio": 2,
+    "width": 200,
+    "x": 4086,
+    "y": 3338
+  },
+  "Havnesensor_strom_fast": {
+    "height": 400,
+    "pixelRatio": 2,
+    "width": 200,
+    "x": 4286,
+    "y": 3338
+  },
+  "Havnesensor_strom_flytende": {
+    "height": 400,
+    "pixelRatio": 2,
+    "width": 200,
+    "x": 4486,
+    "y": 3338
+  },
+  "Havnesensor_temperatur_fast": {
+    "height": 400,
+    "pixelRatio": 2,
+    "width": 200,
+    "x": 4686,
+    "y": 3338
+  },
+  "Havnesensor_temperatur_flytende": {
+    "height": 400,
+    "pixelRatio": 2,
+    "width": 200,
+    "x": 4886,
+    "y": 3338
+  },
+  "Havnesensor_vaerstasjon_fast": {
+    "height": 400,
+    "pixelRatio": 2,
+    "width": 200,
+    "x": 4089,
+    "y": 1738
+  },
+  "Havnesensor_vaerstasjon_flytende": {
+    "height": 400,
+    "pixelRatio": 2,
+    "width": 200,
+    "x": 4289,
+    "y": 1738
+  },
+  "Havnesensor_vannstand_fast": {
+    "height": 400,
+    "pixelRatio": 2,
+    "width": 200,
+    "x": 4489,
+    "y": 1738
+  },
+  "Havnesensor_vannstand_flytende": {
+    "height": 400,
+    "pixelRatio": 2,
+    "width": 200,
+    "x": 4689,
+    "y": 1738
+  },
+  "Havnesensor_vind_fast": {
+    "height": 400,
+    "pixelRatio": 2,
+    "width": 200,
+    "x": 4889,
+    "y": 1738
+  },
+  "Havnesensor_vind_flytende": {
+    "height": 400,
+    "pixelRatio": 2,
+    "width": 200,
+    "x": 0,
+    "y": 4592
+  },
+  "Kran_annen": {
+    "height": 400,
+    "pixelRatio": 2,
+    "width": 270,
+    "x": 200,
+    "y": 4592
+  },
+  "Kran_fastkran": {
+    "height": 400,
+    "pixelRatio": 2,
+    "width": 270,
+    "x": 470,
+    "y": 4592
+  },
+  "Kran_mobilkran": {
+    "height": 400,
+    "pixelRatio": 2,
+    "width": 270,
+    "x": 740,
+    "y": 4592
+  },
+  "Stromtilkobling_annen": {
+    "height": 200,
+    "pixelRatio": 2,
+    "width": 200,
+    "x": 4900,
+    "y": 5242
+  },
+  "Stromtilkobling_ladeanlegg": {
+    "height": 200,
+    "pixelRatio": 2,
+    "width": 200,
+    "x": 0,
+    "y": 5492
+  },
+  "Stromtilkobling_landstrom": {
+    "height": 200,
+    "pixelRatio": 2,
+    "width": 280,
+    "x": 200,
+    "y": 5492
+  },
+  "Stromtilkobling_stromskap": {
+    "height": 200,
+    "pixelRatio": 2,
+    "width": 200,
+    "x": 480,
+    "y": 5492
+  },
+  "Vanntilkobling_annen": {
+    "height": 186,
+    "pixelRatio": 2,
+    "width": 160,
+    "x": 680,
+    "y": 5492
+  },
+  "Vanntilkobling_ferskvann": {
+    "height": 186,
+    "pixelRatio": 2,
+    "width": 160,
+    "x": 840,
+    "y": 5492
+  },
+  "Vanntilkobling_graavann": {
+    "height": 170,
+    "pixelRatio": 2,
+    "width": 200,
+    "x": 1000,
+    "y": 5492
+  },
+  "Vanntilkobling_svartvann": {
+    "height": 170,
+    "pixelRatio": 2,
+    "width": 200,
+    "x": 1200,
+    "y": 5492
+  },
+  "airport": {
+    "height": 250,
+    "pixelRatio": 2,
+    "width": 250,
+    "x": 3216,
+    "y": 4592
+  },
+  "airport-arctic-sdi": {
+    "height": 626,
+    "pixelRatio": 2,
+    "width": 610,
+    "x": 1276,
+    "y": 3338
+  },
+  "akvakultur": {
+    "height": 96,
+    "pixelRatio": 2,
+    "width": 96,
+    "x": 2200,
+    "y": 5492
+  },
+  "anker": {
+    "height": 96,
+    "pixelRatio": 2,
+    "width": 96,
+    "x": 2296,
+    "y": 5492
+  },
+  "arrow": {
+    "height": 14,
+    "pixelRatio": 2,
+    "width": 40,
+    "x": 3139,
+    "y": 5492
+  },
+  "baalplass_positiv": {
+    "height": 250,
+    "pixelRatio": 2,
+    "width": 250,
+    "x": 3466,
+    "y": 4592
+  },
+  "baatutsetting-fritidsbaat_positiv": {
+    "height": 250,
+    "pixelRatio": 2,
+    "width": 250,
+    "x": 3716,
+    "y": 4592
+  },
+  "bading_positiv": {
+    "height": 250,
+    "pixelRatio": 2,
+    "width": 250,
+    "x": 3966,
+    "y": 4592
+  },
+  "campingplass": {
+    "height": 250,
+    "pixelRatio": 2,
+    "width": 250,
+    "x": 4216,
+    "y": 4592
+  },
+  "campingplass_positiv": {
+    "height": 250,
+    "pixelRatio": 2,
+    "width": 250,
+    "x": 4466,
+    "y": 4592
+  },
+  "europagra": {
+    "height": 100,
+    "pixelRatio": 2,
+    "width": 160,
+    "x": 1880,
+    "y": 5492
+  },
+  "europagra2": {
+    "height": 100,
+    "pixelRatio": 2,
+    "width": 160,
+    "x": 2040,
+    "y": 5492
+  },
+  "europaveg": {
+    "height": 300,
+    "pixelRatio": 2,
+    "width": 400,
+    "x": 2310,
+    "y": 4592
+  },
+  "europaveg_graa": {
+    "height": 75,
+    "pixelRatio": 2,
+    "width": 100,
+    "x": 2767,
+    "y": 5492
+  },
+  "flyplass_positiv": {
+    "height": 250,
+    "pixelRatio": 2,
+    "width": 250,
+    "x": 4716,
+    "y": 4592
+  },
+  "friluftsliv": {
+    "height": 250,
+    "pixelRatio": 2,
+    "width": 250,
+    "x": 0,
+    "y": 4992
+  },
+  "friluftsliv_positiv": {
+    "height": 250,
+    "pixelRatio": 2,
+    "width": 250,
+    "x": 250,
+    "y": 4992
+  },
+  "fyr": {
+    "height": 256,
+    "pixelRatio": 2,
+    "width": 256,
+    "x": 2710,
+    "y": 4592
+  },
+  "gangbru---hele-aaret_positiv": {
+    "height": 250,
+    "pixelRatio": 2,
+    "width": 250,
+    "x": 500,
+    "y": 4992
+  },
+  "gapahuk_positiv": {
+    "height": 250,
+    "pixelRatio": 2,
+    "width": 250,
+    "x": 750,
+    "y": 4992
+  },
+  "gruve": {
+    "height": 250,
+    "pixelRatio": 2,
+    "width": 250,
+    "x": 1000,
+    "y": 4992
+  },
+  "hefte": {
+    "height": 96,
+    "pixelRatio": 2,
+    "width": 96,
+    "x": 2392,
+    "y": 5492
+  },
+  "helikopterlandingsplass_utenramme": {
+    "height": 250,
+    "pixelRatio": 2,
+    "width": 250,
+    "x": 1250,
+    "y": 4992
+  },
+  "heliport": {
+    "height": 250,
+    "pixelRatio": 2,
+    "width": 250,
+    "x": 1500,
+    "y": 4992
+  },
+  "hoppbakke": {
+    "height": 250,
+    "pixelRatio": 2,
+    "width": 250,
+    "x": 1750,
+    "y": 4992
+  },
+  "hospital_15": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 2942,
+    "y": 5492
+  },
+  "hytte---betjent": {
+    "height": 250,
+    "pixelRatio": 2,
+    "width": 250,
+    "x": 2000,
+    "y": 4992
+  },
+  "hytte---betjent_positiv": {
+    "height": 250,
+    "pixelRatio": 2,
+    "width": 250,
+    "x": 2250,
+    "y": 4992
+  },
+  "hytte---selvbetjent": {
+    "height": 250,
+    "pixelRatio": 2,
+    "width": 250,
+    "x": 2500,
+    "y": 4992
+  },
+  "hytte---selvbetjent_positiv": {
+    "height": 250,
+    "pixelRatio": 2,
+    "width": 250,
+    "x": 2750,
+    "y": 4992
+  },
+  "hytte---ubetjent": {
+    "height": 250,
+    "pixelRatio": 2,
+    "width": 250,
+    "x": 3000,
+    "y": 4992
+  },
+  "hytte---ubetjent_positiv": {
+    "height": 250,
+    "pixelRatio": 2,
+    "width": 250,
+    "x": 3250,
+    "y": 4992
+  },
+  "informasjon_positiv": {
+    "height": 250,
+    "pixelRatio": 2,
+    "width": 250,
+    "x": 3500,
+    "y": 4992
+  },
+  "innendoers_positiv": {
+    "height": 250,
+    "pixelRatio": 2,
+    "width": 250,
+    "x": 3750,
+    "y": 4992
+  },
+  "jernbanestasjon_blaa": {
+    "height": 250,
+    "pixelRatio": 2,
+    "width": 250,
+    "x": 4000,
+    "y": 4992
+  },
+  "jernbanestasjon_graa": {
+    "height": 250,
+    "pixelRatio": 2,
+    "width": 250,
+    "x": 4250,
+    "y": 4992
+  },
+  "jernbanestasjon_svart": {
+    "height": 250,
+    "pixelRatio": 2,
+    "width": 250,
+    "x": 4500,
+    "y": 4992
+  },
+  "kaibrygge_positiv": {
+    "height": 250,
+    "pixelRatio": 2,
+    "width": 250,
+    "x": 4750,
+    "y": 4992
+  },
+  "kiosk_positiv": {
+    "height": 250,
+    "pixelRatio": 2,
+    "width": 250,
+    "x": 0,
+    "y": 5242
+  },
+  "kirke": {
+    "height": 250,
+    "pixelRatio": 2,
+    "width": 250,
+    "x": 250,
+    "y": 5242
+  },
+  "kirke_positiv": {
+    "height": 250,
+    "pixelRatio": 2,
+    "width": 250,
+    "x": 500,
+    "y": 5242
+  },
+  "kulturminne_positiv": {
+    "height": 250,
+    "pixelRatio": 2,
+    "width": 250,
+    "x": 750,
+    "y": 5242
+  },
+  "myr": {
+    "height": 40,
+    "pixelRatio": 2,
+    "width": 80,
+    "x": 2984,
+    "y": 5492
+  },
+  "parkeringsplass": {
+    "height": 250,
+    "pixelRatio": 2,
+    "width": 250,
+    "x": 1000,
+    "y": 5242
+  },
+  "parkeringsplass_positiv": {
+    "height": 250,
+    "pixelRatio": 2,
+    "width": 250,
+    "x": 1250,
+    "y": 5242
+  },
+  "ports": {
+    "height": 1600,
+    "pixelRatio": 2,
+    "width": 1537,
+    "x": 0,
+    "y": 1738
+  },
+  "prikker": {
+    "height": 75,
+    "pixelRatio": 2,
+    "width": 75,
+    "x": 2867,
+    "y": 5492
+  },
+  "prikkerblaa": {
+    "height": 25,
+    "pixelRatio": 2,
+    "width": 25,
+    "x": 3064,
+    "y": 5492
+  },
+  "prikkerblack": {
+    "height": 25,
+    "pixelRatio": 2,
+    "width": 25,
+    "x": 3089,
+    "y": 5492
+  },
+  "prikkerbrun": {
+    "height": 25,
+    "pixelRatio": 2,
+    "width": 25,
+    "x": 3114,
+    "y": 5492
+  },
+  "rasteplass_positiv": {
+    "height": 250,
+    "pixelRatio": 2,
+    "width": 250,
+    "x": 1500,
+    "y": 5242
+  },
+  "rifleskytebane_positiv": {
+    "height": 250,
+    "pixelRatio": 2,
+    "width": 250,
+    "x": 1750,
+    "y": 5242
+  },
+  "rodtanker": {
+    "height": 96,
+    "pixelRatio": 2,
+    "width": 96,
+    "x": 2488,
+    "y": 5492
+  },
+  "severdighet_positiv": {
+    "height": 250,
+    "pixelRatio": 2,
+    "width": 250,
+    "x": 2000,
+    "y": 5242
+  },
+  "skitrekk_positiv": {
+    "height": 250,
+    "pixelRatio": 2,
+    "width": 250,
+    "x": 2250,
+    "y": 5242
+  },
+  "stuping_positiv": {
+    "height": 250,
+    "pixelRatio": 2,
+    "width": 250,
+    "x": 2500,
+    "y": 5242
+  },
+  "toalett-gammaldass_positiv": {
+    "height": 250,
+    "pixelRatio": 2,
+    "width": 250,
+    "x": 2750,
+    "y": 5242
+  },
+  "trimloeype_positiv": {
+    "height": 250,
+    "pixelRatio": 2,
+    "width": 250,
+    "x": 3000,
+    "y": 5242
+  },
+  "utsiktspunkt_positiv": {
+    "height": 250,
+    "pixelRatio": 2,
+    "width": 250,
+    "x": 3250,
+    "y": 5242
+  },
+  "vindturbin": {
+    "height": 95,
+    "pixelRatio": 2,
+    "width": 87,
+    "x": 2680,
+    "y": 5492
+  },
+  "wreck116": {
+    "height": 96,
+    "pixelRatio": 2,
+    "width": 96,
+    "x": 2584,
+    "y": 5492
+  }
+}
