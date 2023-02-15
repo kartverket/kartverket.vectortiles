@@ -1,0 +1,140 @@
+{
+  "version": 8,
+  "name": "adm_enheter",
+  "sources": {
+    "landtopo": {
+      "type": "vector",
+      "tiles": ["https://cache.kartverket.no/test/vectortiles/landtopo/{z}/{x}/{y}.mvt"]
+    }
+  },
+
+  "sprite": "https://vectortiles.kartverket.no/styles/test/landtopo/landtopo",
+  "glyphs": "https://cache.kartverket.no/test/fonts/{fontstack}/{range}.pbf",
+
+  "layers": [
+    {
+      "id": "kommune_grense_case",
+      "minzoom": 7,
+      "maxzoom": 15,
+      "type": "line",
+      "source": "landtopo",
+      "source-layer": "adm_grenser",
+      "layout": {},
+      "paint": {
+        "line-color": ["match", ["get", "objtype"], ["Kommunegrense"], "rgba(180, 135, 254, 0.6)", "rgba(1, 254, 254, 0)"],
+        "line-width": ["match", ["get", "objtype"], ["Kommunegrense"], 1, 0]
+      }
+    },
+
+    {
+      "id": "kommune_grense_senter",
+      "minzoom": 7,
+      "maxzoom": 15,
+      "type": "line",
+      "source": "landtopo",
+      "source-layer": "adm_grenser",
+      "layout": {},
+      "paint": {
+        "line-color": ["match", ["get", "objtype"], ["Kommunegrense"], "rgba(1, 1, 1, 0.6)", "rgba(1, 254, 254, 0)"],
+        "line-width": ["match", ["get", "objtype"], ["Kommunegrense"], 0.8, 0],
+        "line-dasharray": [5, 5]
+      }
+    },
+
+    {
+      "id": "fylke_grense_case",
+      "minzoom": 4,
+      "maxzoom": 15,
+      "type": "line",
+      "source": "landtopo",
+      "source-layer": "adm_grenser",
+      "layout": {},
+      "paint": {
+        "line-color": ["match", ["get", "objtype"], ["Fylkesgrense"], "rgba(180, 135, 254, 1)", "rgba(1, 254, 254, 0)"],
+        "line-width": ["match", ["get", "objtype"], ["Fylkesgrense"], 2.2, 0]
+      }
+    },
+
+    {
+      "id": "fylke_grense_senter",
+      "minzoom": 4,
+      "maxzoom": 15,
+      "type": "line",
+      "source": "landtopo",
+      "source-layer": "adm_grenser",
+      "layout": {},
+      "paint": {
+        "line-color": ["match", ["get", "objtype"], ["Fylkesgrense"], "rgba(1, 1, 1, 1)", "rgba(1, 254, 254, 0)"],
+        "line-width": ["match", ["get", "objtype"], ["Fylkesgrense"], 1.2, 0],
+        "line-dasharray": [5, 5]
+      }
+    },
+
+    {
+      "id": "riksgrense",
+      "minzoom": 3,
+      "maxzoom": 15,
+      "type": "line",
+      "source": "landtopo",
+      "source-layer": "adm_grenser",
+      "layout": {},
+      "paint": {
+        "line-color": ["match", ["get", "objtype"], ["Riksgrense"], "rgba(190, 90, 190, 1)", "rgba(1, 254, 254, 0)"],
+        "line-width": ["match", ["get", "objtype"], ["Riksgrense"], 3, 0]
+      }
+    },
+
+    {
+      "id": "grunnlinje",
+      "minzoom": 4,
+      "maxzoom": 15,
+      "type": "line",
+      "source": "landtopo",
+      "source-layer": "adm_grenser",
+      "layout": {},
+      "paint": {
+        "line-color": ["match", ["get", "objtype"], ["Grunnlinje"], "rgba(210, 115, 60, 1)", "rgba(1, 254, 254, 0)"],
+        "line-width": ["match", ["get", "objtype"], ["Grunnlinje"], 0.5, 0],
+        "line-dasharray": [8, 8]
+      }
+    },
+
+    {
+      "id": "territorialgrense",
+      "minzoom": 4,
+      "maxzoom": 15,
+      "type": "line",
+      "source": "landtopo",
+      "source-layer": "adm_grenser",
+      "layout": {},
+      "paint": {
+        "line-color": ["match", ["get", "objtype"], ["Territorialgrense"], "rgba(190, 90, 190, 1)", "rgba(1, 254, 254, 0)"],
+        "line-width": ["match", ["get", "objtype"], ["Territorialgrense"], 1, 0],
+        "line-dasharray": [10, 3]
+      }
+    },
+
+    {
+        "id": "adm_enheter",
+        "type": "symbol",
+        "source": "landtopo",
+        "source-layer": "tekst",
+        "minzoom": 4,
+        "maxzoom": 15,
+        "filter": ["all", ["in", "objtype", "StedsnavnTekst", "Kommune"]],
+        "layout": {
+          "symbol-placement": "point",
+          "text-variable-anchor": ["center", "left", "right", "top", "bottom", "top-left", "top-right", "bottom-left", "bottom-right"],
+          "text-allow-overlap": false,
+          "text-font": ["OpenSansRegular"],
+          "text-field": ["to-string", ["get", "textstring"]],
+          "text-size": ["match", ["get", "objtype"], ["StedsnavnTekst"], 15, ["Kommune"], 13, 1]
+        },
+        "paint": {
+          "text-color": ["match", ["get", "objtype"], ["StedsnavnTekst"], "rgba(153, 77, 0, 1)", ["Kommune"], "rgba(110, 56, 1, 1)", "rgba(1, 254, 254, 0)"],
+          "text-halo-width": 1,
+          "text-halo-color": "rgb(254,254,240)"
+        }
+      }
+  ]
+}
