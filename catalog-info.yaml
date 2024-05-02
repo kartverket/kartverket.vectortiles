@@ -1,0 +1,38 @@
+# nonk8s
+apiVersion: "backstage.io/v1alpha1"
+kind: "Component"
+metadata:
+  name: "kartverket.vectortiles"
+  tags:
+  - "public"
+spec:
+  type: "website"
+  lifecycle: "production"
+  owner: "datadeling_og_distribusjon"
+  system: "tjenester"
+---
+apiVersion: "backstage.io/v1alpha1"
+kind: "Group"
+metadata:
+  name: "security_champion_kartverket.vectortiles"
+  title: "Security Champion kartverket.vectortiles"
+spec:
+  type: "security_champion"
+  parent: "land_security_champions"
+  members:
+  - "carsmie"
+  children:
+  - "resource:kartverket.vectortiles"
+---
+apiVersion: "backstage.io/v1alpha1"
+kind: "Resource"
+metadata:
+  name: "kartverket.vectortiles"
+  links:
+  - url: "https://github.com/kartverket/kartverket.vectortiles"
+    title: "kartverket.vectortiles på GitHub"
+spec:
+  type: "repo"
+  owner: "security_champion_kartverket.vectortiles"
+  dependencyOf:
+  - "component:kartverket.vectortiles"
